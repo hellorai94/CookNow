@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="24c7dae6c3939e101f5afb377d0131f9" extends="task" label="Registration" max_length="40" name="x_1593191_cooknow_registration" type="collection">
+        <element label="Schedule" max_length="32" name="schedule" reference="x_1593191_cooknow_training_schedule" type="reference"/>
+        <element label="Student Name" max_length="40" name="student_name" type="string"/>
+        <element label="Training" max_length="32" name="training" reference="x_1593191_cooknow_training" type="reference"/>
+    </element>
+</database>
