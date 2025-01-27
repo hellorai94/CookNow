@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles>x_1593191_cooknow.instructor,x_1593191_cooknow.admin</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 20:19:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8cb222a6c3d39e101f5afb377d0131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CookNow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_app_application_8cb222a6c3d39e101f5afb377d0131bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 20:19:14</sys_updated_on>
+        <title>CookNow</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

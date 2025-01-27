@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593191_cooknow.getUserInstructorRole</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getUserInstructorRole</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var getUserInstructorRole = Class.create();
+getUserInstructorRole.prototype = {
+    initialize: function() {
+    },
+    getInstructorUser: function() {
+        var roleYes = new GlideRecord("sys_user_has_role");
+        roleYes.addEncodedQuery("role.nameSTARTSWITHx_1593191_cooknow.instructor");
+        roleYes.query();
+        var instructorUser = [];
+        while (roleYes.next()) {
+            instructorUser.push(roleYes.user.sys_id);
+        }
+        if (instructorUser.length > 0) {
+            return "sys_idIN" + instructorUser.join(',');
+        }
+        return "";
+    },
+    type: 'getUserInstructorRole'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:23:25</sys_created_on>
+        <sys_id>83503ae6c3179e101f5afb377d0131b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>getUserInstructorRole</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_include_83503ae6c3179e101f5afb377d0131b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:30:25</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>83503ae6c3179e101f5afb377d0131b4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 21:23:25</sys_created_on>
+        <sys_id>3681f6e6c3179e101f5afb377d01315d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 21:23:25</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
