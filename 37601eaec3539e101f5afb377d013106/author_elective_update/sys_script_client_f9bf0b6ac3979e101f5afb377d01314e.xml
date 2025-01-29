@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var course = g_form.getValue('training');
+   var trainingDate = newValue;
+
+   var ga = new GlideAjax('TrainingScheduler');
+
+   ga.addParam('sysparm_name', 'checkTrainingExists');
+   ga.addParam('training', course);
+   ga.addParam('date', trainingDate);
+
+   ga.getXML(function(response) {
+      var result = response.responseXML.documentElement.getAttribute("answer");
+      if (result === 'true') {
+         g_form.showFieldMsg('date', 'Já existe um treinamento agendado para esse curso nesta data.', 'error');
+         g_form.setValue('date', '');
+      } else {
+         g_form.hideFieldMsg('date');
+      }
+   });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 23:45:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9bf0b6ac3979e101f5afb377d01314e</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Validate Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_client_f9bf0b6ac3979e101f5afb377d01314e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 01:20:30</sys_updated_on>
+        <table>x_1593191_cooknow_training_schedule</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_script_client_f9bf0b6ac3979e101f5afb377d01314e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Validate Date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var course = g_form.getValue('training');
+   var trainingDate = newValue;
+
+   var ga = new GlideAjax('TrainingScheduler');
+
+   ga.addParam('sysparm_name', 'checkTrainingExists');
+   ga.addParam('training', course);
+   ga.addParam('date', trainingDate);
+
+   ga.getXML(function(response) {
+      var result = response.responseXML.documentElement.getAttribute("answer");
+      if (result === 'true') {
+         g_form.showFieldMsg('date', 'Já existe um treinamento agendado para esse curso nesta data.', 'error');
+         g_form.setValue('date', '');
+      } else {
+         g_form.hideFieldMsg('date');
+      }
+   });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-27 23:45:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f9bf0b6ac3979e101f5afb377d01314e&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate Date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f9bf0b6ac3979e101f5afb377d01314e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 01:20:30&lt;/sys_updated_on&gt;&lt;table&gt;x_1593191_cooknow_training_schedule&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1307898892</payload_hash>
+        <record_name>Validate Date</record_name>
+        <reverted_from/>
+        <source>ec3f5622c3d39e101f5afb377d013159</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 01:20:30</sys_created_on>
+        <sys_id>3fc767eac31b9e101f5afb377d0131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194aa7ee67c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 01:20:30</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>b3c767ea411b9e1054bdb622fa6f47f7</update_guid>
+        <update_guid_history>b3c767ea411b9e1054bdb622fa6f47f7:1307898892,9de66baa921b9e1027d7d60b08a4a2e3:821194018,aac4632a4e1b9e1003a7e0eef3f47e76:1543634630,7c746ba6091b9e101932975f391a41e1:1791453849,ed2427e6541b9e10a52bcf7acbb78831:1867332189,0f14e3e6f11b9e10262f302526e6d83a:-1866806938,d7412fe2021b9e104c9c2a3c7734f35e:-809195972,f540e3a20e1b9e10c11375487136ef46:1626052990,18df9f62d41b9e10ff169fe5223b1a4c:-834832872,372f572efed79e100b568812fdf2a5eb:1337744287,dbcedb6e0ed79e1002933207409043a8:-2145725551,b4cc1faaeed79e10206a00fdfd644932:-443833359,e32bd32e8dd79e10c9073d6f867d020f:-1290906118,d8d95baabcd79e10ab334bd694861f12:2036903900,2bf6d3e632d79e1028112412555e6aa1:1675335666,be765ba662d79e104ac7637a41140692:-341180453,16d51f666fd79e10138b83af1e2992fc:-122173865,7fc49726d0d79e108e71eff03df1dafa:626312072,3bd393e2d2d79e105dc5bc7f3c558b3c:-413232372,18d21b623bd79e10151e074ee7cc3b81:1605266817,f142536254d79e1020408395daffbc0d:-2042957222,83f15faa20979e102b723572a436060b:1605266817</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 01:26:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>397804ae4dbb4b6099e56ee6b5f52400</sys_id>
+        <sys_metadata>f9bf0b6ac3979e101f5afb377d01314e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Date</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent display_value="Training Schedule">c8a45ee2c3939e101f5afb377d013179</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_script_client_f9bf0b6ac3979e101f5afb377d01314e</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f9bf0b6ac3979e101f5afb377d01314e">3fc767eac31b9e101f5afb377d0131f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 01:26:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

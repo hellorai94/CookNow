@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593191_cooknow.getAvailableCourseDates</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getAvailableCourseDates</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var getAvailableCourseDates = Class.create();
+getAvailableCourseDates.prototype = {
+    initialize: function() {
+    },
+
+    getAvailableDates: function(trainingId, userId) {
+        var enrolledDates = [];
+
+        // Consulta para buscar as datas que o usuário já está matriculado
+        var grEnrollment = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grEnrollment.addQuery("user", userId);
+        grEnrollment.addQuery("training", trainingId);
+        grEnrollment.query();
+        while (grEnrollment.next()) {
+            enrolledDates.push(grEnrollment.date.toString());
+        }
+
+        var availableDates = [];
+        var grCourses = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grCourses.addQuery("training", trainingId); // Filtro pelo curso
+        grCourses.query();
+        while (grCourses.next()) {
+            if (enrolledDates.indexOf(grCourses.date.toString()) == -1) {
+                availableDates.push(grCourses.date.toString());
+            }
+        }
+
+        // Retorna a lista de datas que o usuário ainda não está matriculado
+        return "dateIN" + availableDates.join(",");
+    },
+
+    type: 'getAvailableCourseDates'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:00:41</sys_created_on>
+        <sys_id>c6b5da32c397de101f5afb377d013180</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getAvailableCourseDates</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_include_c6b5da32c397de101f5afb377d013180</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:20:30</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>c6b5da32c397de101f5afb377d013180</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:00:41</sys_created_on>
+        <sys_id>93c59abec357de101f5afb377d013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:00:41</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_script_include_c6b5da32c397de101f5afb377d013180</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593191_cooknow.getAvailableCourseDates&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;getAvailableCourseDates&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var getAvailableCourseDates = Class.create();
+getAvailableCourseDates.prototype = {
+    initialize: function() {
+    },
+
+    getAvailableDates: function(trainingId, userId) {
+        var enrolledDates = [];
+
+        // Consulta para buscar as datas que o usuário já está matriculado
+        var grEnrollment = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grEnrollment.addQuery("user", userId);
+        grEnrollment.addQuery("training", trainingId);
+        grEnrollment.query();
+        while (grEnrollment.next()) {
+            enrolledDates.push(grEnrollment.date.toString());
+        }
+
+        var availableDates = [];
+        var grCourses = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grCourses.addQuery("training", trainingId); // Filtro pelo curso
+        grCourses.query();
+        while (grCourses.next()) {
+            if (enrolledDates.indexOf(grCourses.date.toString()) == -1) {
+                availableDates.push(grCourses.date.toString());
+            }
+        }
+
+        // Retorna a lista de datas que o usuário ainda não está matriculado
+        return "dateIN" + availableDates.join(",");
+    },
+
+    type: 'getAvailableCourseDates'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 14:00:41&lt;/sys_created_on&gt;&lt;sys_id&gt;c6b5da32c397de101f5afb377d013180&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;getAvailableCourseDates&lt;/sys_name&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c6b5da32c397de101f5afb377d013180&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 14:20:30&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;c6b5da32c397de101f5afb377d013180&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 14:00:41&lt;/sys_created_on&gt;&lt;sys_id&gt;93c59abec357de101f5afb377d013153&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 14:00:41&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>810583288</payload_hash>
+        <record_name>getAvailableCourseDates</record_name>
+        <reverted_from/>
+        <source>ec3f5622c3d39e101f5afb377d013159</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:20:30</sys_created_on>
+        <sys_id>f15a5a36c397de101f5afb377d0131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ad4903820000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:20:30</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>295a5a36ac97de10eaa72d4616a3d8fd</update_guid>
+        <update_guid_history>295a5a36ac97de10eaa72d4616a3d8fd:810583288,5c899a762697de1077630ac428086e4b:825517215,24d55e32ef97de10dff135c63352ffad:-1939552952,a3c55e32b397de10014cddb0778ff117:-400147133</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:33:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1800bf58388b4dc1b8b6895423391409</sys_id>
+        <sys_metadata>c6b5da32c397de101f5afb377d013180</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>getAvailableCourseDates</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_script_include_c6b5da32c397de101f5afb377d013180</sys_update_name>
+        <sys_update_version display_value="sys_script_include_c6b5da32c397de101f5afb377d013180">f15a5a36c397de101f5afb377d0131fe</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:33:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

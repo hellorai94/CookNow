@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593191_cooknow.DateUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DateUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var DateUtils = Class.create();
+DateUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    checkDuplicates: function() {
+        var date = this.getParameter("sysparm_trainingId");
+        var course = this.getParameter("sysparm_dateId");
+ 
+        var grTraining = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grTraining.addQuery("training", course);
+        grTraining.addQuery("date", date);
+        grTraining.query();
+ 
+        if (grTraining.next()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    type: 'DateUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 18:28:28</sys_created_on>
+        <sys_id>6cc2d33ec39bde101f5afb377d0131d4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>DateUtils</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_include_6cc2d33ec39bde101f5afb377d0131d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:23:33</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>6cc2d33ec39bde101f5afb377d0131d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 18:28:28</sys_created_on>
+        <sys_id>3d13933ec39bde101f5afb377d013183</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 18:28:28</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_script_include_6cc2d33ec39bde101f5afb377d0131d4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593191_cooknow.DateUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;DateUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var DateUtils = Class.create();
+DateUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    checkDuplicates: function() {
+        var date = this.getParameter("sysparm_trainingId");
+        var course = this.getParameter("sysparm_dateId");
+ 
+        var grTraining = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grTraining.addQuery("training", course);
+        grTraining.addQuery("date", date);
+        grTraining.query();
+ 
+        if (grTraining.next()) {
+            return true;
+        } else {
+            return false;
+        }
+    },
+    type: 'DateUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 18:28:28&lt;/sys_created_on&gt;&lt;sys_id&gt;6cc2d33ec39bde101f5afb377d0131d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;DateUtils&lt;/sys_name&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_6cc2d33ec39bde101f5afb377d0131d4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 19:23:33&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;6cc2d33ec39bde101f5afb377d0131d4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 18:28:28&lt;/sys_created_on&gt;&lt;sys_id&gt;3d13933ec39bde101f5afb377d013183&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 18:28:28&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1577870948</payload_hash>
+        <record_name>DateUtils</record_name>
+        <reverted_from/>
+        <source>ec3f5622c3d39e101f5afb377d013159</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:23:33</sys_created_on>
+        <sys_id>30bf13fac3dbde101f5afb377d0131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ae5e76b20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:23:33</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>b4bf13fad1dbde10095a2df342ea79d9</update_guid>
+        <update_guid_history>b4bf13fad1dbde10095a2df342ea79d9:-1577870948,ff9e13facadbde10c9074e244bad2fd0:-443525323,d6a71b72cfdbde10c11a26dbd8405c0a:-998919185,7dd6977296dbde10406f6527ddfe37f1:1098500243,4a961732d8dbde1005a925eed332c06c:-1451455273,1f8413fa3b9bde101b11c499003f17dd:1719730391,12139b3e7a9bde105a244a1d71f5bc59:-1539112269</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 19:24:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>8e23516b171f47f09a3a3c0b233bde09</sys_id>
+        <sys_metadata>6cc2d33ec39bde101f5afb377d0131d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DateUtils</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_script_include_6cc2d33ec39bde101f5afb377d0131d4</sys_update_name>
+        <sys_update_version display_value="sys_script_include_6cc2d33ec39bde101f5afb377d0131d4">30bf13fac3dbde101f5afb377d0131da</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:24:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

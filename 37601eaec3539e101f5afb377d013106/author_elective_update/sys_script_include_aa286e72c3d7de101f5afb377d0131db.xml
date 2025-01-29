@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1593191_cooknow.CheckUserEnrollment</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CheckUserEnrollment</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CheckUserEnrollment = Class.create();
+CheckUserEnrollment.prototype = {
+    initialize: function() {},
+
+    checkEnrollment: function(userId, trainingId, date) {
+        gs.info("Checking enrollment for User: " + userId + ", Training: " + trainingId + ", Date: " + date);
+        
+        var grEnrollment = new GlideRecord('x_1593191_cooknow_registration');
+        grEnrollment.addQuery('user', userId);
+        grEnrollment.addQuery('training', trainingId);
+        grEnrollment.addQuery('date', date);
+        grEnrollment.query();
+        
+        if (grEnrollment.next()) {
+            gs.info("User already enrolled for this date.");
+            return true;  // Usuário já está matriculado
+        } else {
+            gs.info("User not enrolled for this date.");
+            return false;  // Usuário não está matriculado
+        }
+    },
+
+    type: 'CheckUserEnrollment'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 15:21:11</sys_created_on>
+        <sys_id>aa286e72c3d7de101f5afb377d0131db</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CheckUserEnrollment</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_include_aa286e72c3d7de101f5afb377d0131db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 15:31:37</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>aa286e72c3d7de101f5afb377d0131db</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 15:21:10</sys_created_on>
+        <sys_id>1a386af6c3d7de101f5afb377d0131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 15:21:10</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_script_include_aa286e72c3d7de101f5afb377d0131db</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593191_cooknow.CheckUserEnrollment&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;CheckUserEnrollment&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var CheckUserEnrollment = Class.create();
+CheckUserEnrollment.prototype = {
+    initialize: function() {},
+
+    checkEnrollment: function(userId, trainingId, date) {
+        gs.info("Checking enrollment for User: " + userId + ", Training: " + trainingId + ", Date: " + date);
+        
+        var grEnrollment = new GlideRecord('x_1593191_cooknow_registration');
+        grEnrollment.addQuery('user', userId);
+        grEnrollment.addQuery('training', trainingId);
+        grEnrollment.addQuery('date', date);
+        grEnrollment.query();
+        
+        if (grEnrollment.next()) {
+            gs.info("User already enrolled for this date.");
+            return true;  // Usuário já está matriculado
+        } else {
+            gs.info("User not enrolled for this date.");
+            return false;  // Usuário não está matriculado
+        }
+    },
+
+    type: 'CheckUserEnrollment'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 15:21:11&lt;/sys_created_on&gt;&lt;sys_id&gt;aa286e72c3d7de101f5afb377d0131db&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;CheckUserEnrollment&lt;/sys_name&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_aa286e72c3d7de101f5afb377d0131db&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 15:31:37&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;aa286e72c3d7de101f5afb377d0131db&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 15:21:10&lt;/sys_created_on&gt;&lt;sys_id&gt;1a386af6c3d7de101f5afb377d0131a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 15:21:10&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-992364281</payload_hash>
+        <record_name>CheckUserEnrollment</record_name>
+        <reverted_from/>
+        <source>ec3f5622c3d39e101f5afb377d013159</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 15:31:37</sys_created_on>
+        <sys_id>9b9a2ebac3d7de101f5afb377d01316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ad8a1eac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 15:31:37</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>df9a2ebaf0d7de10950ab7d1f329be6e</update_guid>
+        <update_guid_history>df9a2ebaf0d7de10950ab7d1f329be6e:-992364281,1c586e7272d7de10d2dc4fed92b3e9e0:-601368584,26382ef61dd7de10414f67ad56624035:1047753843</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 15:56:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>09a6e3f685ae4b80ba610c24904d1c40</sys_id>
+        <sys_metadata>aa286e72c3d7de101f5afb377d0131db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckUserEnrollment</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_script_include_aa286e72c3d7de101f5afb377d0131db</sys_update_name>
+        <sys_update_version display_value="sys_script_include_aa286e72c3d7de101f5afb377d0131db">9b9a2ebac3d7de101f5afb377d01316f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 15:56:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

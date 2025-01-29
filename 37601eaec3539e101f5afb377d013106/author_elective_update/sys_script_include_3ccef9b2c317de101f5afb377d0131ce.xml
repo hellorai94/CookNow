@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_1593191_cooknow.TrainingValidation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TrainingValidation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TrainingValidation = Class.create();
+TrainingValidation.prototype = {
+    initialize: function() {},
+
+    validateSchedule: function(training, date) {
+        if (!training || !date) {
+            return { valid: false, message: "Treinamento ou data não fornecidos." };
+        }
+
+        var schedule = new GlideRecord('x_1593191_cooknow_training_schedule');
+        schedule.addQuery('training', training);
+        schedule.addQuery('date', date);
+        schedule.query();
+
+        if (schedule.next()) {
+            return {
+                valid: false,
+                message: "Já existe um curso agendado para esta data!"
+            };
+        }
+
+        return { valid: true };
+    },
+
+    type: 'TrainingValidation'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 12:23:40</sys_created_on>
+        <sys_id>3ccef9b2c317de101f5afb377d0131ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TrainingValidation</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_include_3ccef9b2c317de101f5afb377d0131ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 12:27:32</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>3ccef9b2c317de101f5afb377d0131ce</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 12:23:40</sys_created_on>
+        <sys_id>569ff9b2c317de101f5afb377d0131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 12:23:40</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_script_include_3ccef9b2c317de101f5afb377d0131ce</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_1593191_cooknow.TrainingValidation&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;TrainingValidation&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var TrainingValidation = Class.create();
+TrainingValidation.prototype = {
+    initialize: function() {},
+
+    validateSchedule: function(training, date) {
+        if (!training || !date) {
+            return { valid: false, message: "Treinamento ou data não fornecidos." };
+        }
+
+        var schedule = new GlideRecord('x_1593191_cooknow_training_schedule');
+        schedule.addQuery('training', training);
+        schedule.addQuery('date', date);
+        schedule.query();
+
+        if (schedule.next()) {
+            return {
+                valid: false,
+                message: "Já existe um curso agendado para esta data!"
+            };
+        }
+
+        return { valid: true };
+    },
+
+    type: 'TrainingValidation'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 12:23:40&lt;/sys_created_on&gt;&lt;sys_id&gt;3ccef9b2c317de101f5afb377d0131ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;TrainingValidation&lt;/sys_name&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_3ccef9b2c317de101f5afb377d0131ce&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 12:27:32&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;3ccef9b2c317de101f5afb377d0131ce&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 12:23:40&lt;/sys_created_on&gt;&lt;sys_id&gt;569ff9b2c317de101f5afb377d0131d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 12:23:40&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1320828442</payload_hash>
+        <record_name>TrainingValidation</record_name>
+        <reverted_from/>
+        <source>ec3f5622c3d39e101f5afb377d013159</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 12:27:33</sys_created_on>
+        <sys_id>8f70ce36c317de101f5afb377d013188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194ace1982b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 12:27:33</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c370ce36ec17de10089415ef5b944c88</update_guid>
+        <update_guid_history>c370ce36ec17de10089415ef5b944c88:-1320828442,e39f7df22917de10a9c1893d1b92e207:-502238569,d29ffd729717de108c023f4bcc2024e6:2088408466</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 14:33:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>04a566d30d3746199ed6c115e3f8fde9</sys_id>
+        <sys_metadata>3ccef9b2c317de101f5afb377d0131ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TrainingValidation</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_script_include_3ccef9b2c317de101f5afb377d0131ce</sys_update_name>
+        <sys_update_version display_value="sys_script_include_3ccef9b2c317de101f5afb377d0131ce">8f70ce36c317de101f5afb377d013188</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 14:33:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

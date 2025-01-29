@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>false</active>
+        <applies_catalog>false</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Registration">7279e3aec31b9e101f5afb377d01319c</cat_item>
+        <cat_variable>IO:062d77e6c39b9e101f5afb377d01311c</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Historia 3</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var course = g_form.getValue('training'); // Obtém o curso selecionado
+   var trainingDate = newValue;
+
+   // Formatar a data para o formato yyyy-mm-dd
+   var formattedDate = formatDate(trainingDate);
+
+   var ga = new GlideAjax('TrainingScheduler');
+
+   ga.addParam('sysparm_name', 'checkTrainingExists');
+   ga.addParam('training', course);
+   ga.addParam('date', formattedDate);
+
+   ga.getXMLAnswer(function(response) {
+      var result = response;
+	alert(result);
+      if (result === 'true') {
+         // Mostrar mensagem de erro sem limpar o campo diretamente
+         g_form.showFieldMsg('date', 'Já existe um treinamento agendado para esse curso nesta data.', 'error');
+      } else {
+         g_form.hideFieldMsg('date');
+      }
+   });
+
+   // Função para converter data de dd/mm/yyyy para yyyy-mm-dd
+   function formatDate(dateStr) {
+      var dateParts = dateStr.split('/');
+      if (dateParts.length === 3) {
+         return '20' + dateParts[2] + '-' + dateParts[1] + '-' + dateParts[0];
+      }
+      return dateStr; // Retorna a data original caso esteja incorreta
+   }
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 16:23:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18163a3ac31bde101f5afb377d0131c4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Historia 3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>catalog_script_client_18163a3ac31bde101f5afb377d0131c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:56:33</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_es_latest_script action="DELETE">
+        <id>18163a3ac31bde101f5afb377d0131c4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 16:23:21</sys_created_on>
+        <sys_id>0d767e3ac31bde101f5afb377d0131b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:23:21</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>catalog_script_client_18163a3ac31bde101f5afb377d0131c4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;false&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Registration"&gt;7279e3aec31b9e101f5afb377d01319c&lt;/cat_item&gt;&lt;cat_variable&gt;IO:062d77e6c39b9e101f5afb377d01311c&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Historia 3&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var course = g_form.getValue('training'); // Obtém o curso selecionado
+   var trainingDate = newValue;
+
+   // Formatar a data para o formato yyyy-mm-dd
+   var formattedDate = formatDate(trainingDate);
+
+   var ga = new GlideAjax('TrainingScheduler');
+
+   ga.addParam('sysparm_name', 'checkTrainingExists');
+   ga.addParam('training', course);
+   ga.addParam('date', formattedDate);
+
+   ga.getXMLAnswer(function(response) {
+      var result = response;
+	alert(result);
+      if (result === 'true') {
+         // Mostrar mensagem de erro sem limpar o campo diretamente
+         g_form.showFieldMsg('date', 'Já existe um treinamento agendado para esse curso nesta data.', 'error');
+      } else {
+         g_form.hideFieldMsg('date');
+      }
+   });
+
+   // Função para converter data de dd/mm/yyyy para yyyy-mm-dd
+   function formatDate(dateStr) {
+      var dateParts = dateStr.split('/');
+      if (dateParts.length === 3) {
+         return '20' + dateParts[2] + '-' + dateParts[1] + '-' + dateParts[0];
+      }
+      return dateStr; // Retorna a data original caso esteja incorreta
+   }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 16:23:21&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;18163a3ac31bde101f5afb377d0131c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Historia 3&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_18163a3ac31bde101f5afb377d0131c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 16:56:33&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;va_supported&gt;true&lt;/va_supported&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;18163a3ac31bde101f5afb377d0131c4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 16:23:21&lt;/sys_created_on&gt;&lt;sys_id&gt;0d767e3ac31bde101f5afb377d0131b8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 16:23:21&lt;/sys_updated_on&gt;&lt;table&gt;catalog_script_client&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-789037257</payload_hash>
+        <record_name>Historia 3</record_name>
+        <reverted_from/>
+        <source>ec3f5622c3d39e101f5afb377d013159</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 16:56:33</sys_created_on>
+        <sys_id>ab0e3ab2c35bde101f5afb377d013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194add7e1c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 16:56:33</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>230e3ab2045bde10ee651f35c2c07299</update_guid>
+        <update_guid_history>230e3ab2045bde10ee651f35c2c07299:-789037257,f86d7e72ce5bde104bbf664f63ea9e0c:467804595,c35dfa72ec5bde1033e75e4ff7043ee9:-1118295248,589cfa32ac5bde1089e4efb34a7052bb:954834104,4576327af21bde10ba258ddc34ae3655:630596329</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Historia 3">b2414fb6c35bde101f5afb377d01311b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 17:10:42</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>73e3c8b5c2c14b56932983d146959b84</sys_id>
+        <sys_metadata>18163a3ac31bde101f5afb377d0131c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Historia 3</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>catalog_script_client_18163a3ac31bde101f5afb377d0131c4</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_18163a3ac31bde101f5afb377d0131c4">ab0e3ab2c35bde101f5afb377d013199</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 17:10:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
