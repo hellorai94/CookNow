@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1593191_cooknow_registration</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:30:51</sys_created_on>
+        <sys_id>cac75ee6c3939e101f5afb377d01315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593191_cooknow_registration</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_security_acl_cac75ee6c3939e101f5afb377d01315e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:30:51</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_security_acl_cac75ee6c3939e101f5afb377d01315e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description/><local_or_existing>Local</local_or_existing><name>x_1593191_cooknow_registration</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-27 19:30:51</sys_created_on><sys_id>cac75ee6c3939e101f5afb377d01315e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1593191_cooknow_registration</sys_name><sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package><sys_policy/><sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope><sys_update_name>sys_security_acl_cac75ee6c3939e101f5afb377d01315e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-27 19:30:51</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-263830034</payload_hash>
+        <record_name>x_1593191_cooknow_registration</record_name>
+        <reverted_from/>
+        <source>bb601eaec3539e101f5afb377d013161</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:30:51</sys_created_on>
+        <sys_id>4ac75ee6c3939e101f5afb377d013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a93ec9b80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:30:51</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>4ec75ee68e939e10cbf2c904fed88b60</update_guid>
+        <update_guid_history>4ec75ee68e939e10cbf2c904fed88b60:-263830034</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 14:08:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>10f3914eb7824910879dc156ee0a9e10</sys_id>
+        <sys_metadata>cac75ee6c3939e101f5afb377d01315e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593191_cooknow_registration</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent display_value="x_1593191_cooknow_registration">60c71ee6c3939e101f5afb377d01316c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_cac75ee6c3939e101f5afb377d01315e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_cac75ee6c3939e101f5afb377d01315e">4ac75ee6c3939e101f5afb377d013161</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 14:08:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

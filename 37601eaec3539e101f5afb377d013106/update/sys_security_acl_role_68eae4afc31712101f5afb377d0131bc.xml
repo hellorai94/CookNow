@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-29 14:12:05</sys_created_on>
-        <sys_id>61e167cfc3df12501f5afb377d013160</sys_id>
+        <sys_created_on>2025-01-30 14:09:22</sys_created_on>
+        <sys_id>68eae4afc31712101f5afb377d0131bc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1593191_cooknow_training_schedule.x_1593191_cooknow.user</sys_name>
+        <sys_name>x_1593191_cooknow_registration.x_1593191_cooknow.user</sys_name>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
-        <sys_security_acl display_value="x_1593191_cooknow_training_schedule">45a4dee2c3939e101f5afb377d01311d</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_61e167cfc3df12501f5afb377d013160</sys_update_name>
+        <sys_security_acl display_value="x_1593191_cooknow_registration">e9239443c31312501f5afb377d0131c9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_68eae4afc31712101f5afb377d0131bc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 14:12:05</sys_updated_on>
+        <sys_updated_on>2025-01-30 14:09:22</sys_updated_on>
         <sys_user_role display_value="x_1593191_cooknow.user" name="x_1593191_cooknow.user">c4701eaec3539e101f5afb377d01318c</sys_user_role>
     </sys_security_acl_role>
 </record_update>

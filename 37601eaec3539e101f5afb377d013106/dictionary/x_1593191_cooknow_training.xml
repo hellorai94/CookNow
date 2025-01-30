@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="60619eeec3539e101f5afb377d01319a" label="Training" max_length="40" name="x_1593191_cooknow_training" type="collection">
+        <element label="Integration Error Message" max_length="40" name="integration_error_message" type="string"/>
         <element display="true" label="Name" max_length="40" name="name" type="string"/>
         <element label="Summary" max_length="400" name="summary" type="string"/>
+        <element label="Integration Status" max_length="40" name="integration_status" type="string"/>
         <element label="English Summary" max_length="400" name="english_summary" type="string"/>
     </element>
 </database>

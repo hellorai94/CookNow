@@ -10,29 +10,28 @@
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <flow_priority/>
-        <ih_action>false</ih_action>
+        <ih_action>true</ih_action>
         <internal_name>rapidapi</internal_name>
-        <label_cache>[{"name":"{{action.body}}","label":"action➛body","type":"action","ref":"","reference_display":"","base_type":"multi_small","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].endpoint}}","label":"step➛Script step➛Endpoint","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"654e6d2f-a175-4769-b994-7e42c6df3a3e"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_key}}","label":"step➛Script step➛X-RapidAPI-Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1876fdda-0043-4646-9dba-6aac470872e2"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_host}}","label":"step➛Script step➛X-RapidAPI-Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"497b9223-0237-4850-ad77-3b37c71f03cd"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].content_type}}","label":"step➛Script step➛Content-Type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d32f98aa-fce8-4751-840d-c68e11da0099"}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"{{action.body}}","label":"action➛data","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Multiple Line Small Text Area","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"multi_small","uiUniqueId":"41a14e52-f000-44fb-b3e5-37f73d218e31"}},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.text}}","label":"action➛text","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].endpoint}}","label":"step➛Variables Initialization➛Endpoint","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"654e6d2f-a175-4769-b994-7e42c6df3a3e"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_key}}","label":"step➛Variables Initialization➛X-RapidAPI-Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1876fdda-0043-4646-9dba-6aac470872e2"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_host}}","label":"step➛Variables Initialization➛X-RapidAPI-Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"497b9223-0237-4850-ad77-3b37c71f03cd"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].content_type}}","label":"step➛Variables Initialization➛Content-Type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d32f98aa-fce8-4751-840d-c68e11da0099"}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].response_body}}","label":"step➛Radidapi Integration➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].__step_status__.code}}","label":"step➛Radidapi Integration➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].error_code}}","label":"step➛Radidapi Integration➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].__step_status__.code}}","label":"step➛Variables Initialization➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].__step_status__}}","label":"step➛Radidapi Integration➛Step Status","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[169cbc5d-6bdf-4933-b3fa-901a0a4e672a].root}}","label":"step➛Parser ResponseBody➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDc8aa70e3d3971210eafa224eb381131d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"124b6560-955f-4b47-be24-a09a0bff19ed"}}]</label_cache>
+        <master_snapshot>c21e9563c35b12101f5afb377d0131d7</master_snapshot>
         <master_snapshot_digest/>
         <name>Rapidapi </name>
         <natlang/>
         <outputs/>
+        <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 03:42:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd6b9a5bc39f52501f5afb377d013119</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>Rapidapi </sys_name>
         <sys_overrides/>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
@@ -40,7 +39,7 @@
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd6b9a5bc39f52501f5afb377d013119</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:17:42</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -54,10 +53,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:01:16</sys_created_on>
         <sys_id>52cf5e93c3df52501f5afb377d0131ab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-01-30 15:04:50</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
         <variable display_value="Action Status">5acf5e93c3df52501f5afb377d01319a</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -74,8 +73,56 @@
         <value>0</value>
         <variable display_value="Don't Treat as Error">52cf5e93c3df52501f5afb377d0131a0</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119^id=dd6b9a5bc39f52501f5afb377d013119"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN1ecf5e93c3df52501f5afb377d013180,3c82e297c3df52501f5afb377d013118,8582e297c3df52501f5afb377d013137"/>
+    <sys_element_mapping action="delete_multiple" query="id=dd6b9a5bc39f52501f5afb377d013119"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>textTranslated</field>
+        <id>dd6b9a5bc39f52501f5afb377d013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:28:45</sys_created_on>
+        <sys_id>852df0a7c39712101f5afb377d013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:28:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</table>
+        <value>{{step[169cbc5d-6bdf-4933-b3fa-901a0a4e672a].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>dd6b9a5bc39f52501f5afb377d013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:27:56</sys_created_on>
+        <sys_id>4dfcbc67c39712101f5afb377d0131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:27:56</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</table>
+        <value>{{step[169cbc5d-6bdf-4933-b3fa-901a0a4e672a].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>dd6b9a5bc39f52501f5afb377d013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 04:01:16</sys_created_on>
+        <sys_id>1ecf5e93c3df52501f5afb377d0131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>dd6b9a5bc39f52501f5afb377d013119</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 04:01:16</sys_created_on>
+        <sys_id>5acf5e93c3df52501f5afb377d0131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
+        <table>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN1ecf5e93c3df52501f5afb377d013180,3c82e297c3df52501f5afb377d013118,557a7ca3c39712101f5afb377d013146"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Rapidapi ">dd6b9a5bc39f52501f5afb377d013119</action>
         <cid>a45b3629-5157-4668-a15c-8c3cd8952180</cid>
@@ -84,7 +131,7 @@
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <label>Script step</label>
+        <label>Variables Initialization</label>
         <order>1</order>
         <outputs/>
         <section/>
@@ -92,10 +139,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:01:16</sys_created_on>
         <sys_id>1ecf5e93c3df52501f5afb377d013180</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
+        <sys_updated_on>2025-01-30 17:49:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1ecf5e93c3df52501f5afb377d013180"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -106,14 +153,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:01:16</sys_created_on>
         <sys_id>1ecf5e93c3df52501f5afb377d013197</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
+        <sys_updated_on>2025-01-30 17:49:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-  outputs.apikey = gs.getProperty("x_1593191_cooknow.integration_apikey", 0);&#13;
-  outputs.contenttype = gs.getProperty("x_1593191_cooknow.Content-Type");&#13;
-  outputs.xrapidapihost = gs.getProperty("x_1593191_cooknow.X-RapidAPI-Host");&#13;
-  outputs.endpoint = gs.getProperty("x_1593191_cooknow.integration_endpoint_url");&#13;
+  outputs.x_rapidapi_key = gs.getProperty("x_1593191_cooknow.integration_apikey", 0);&#13;
+  outputs.content_type = gs.getProperty("x_1593191_cooknow.Content-Type", "");&#13;
+  outputs.x_rapidapi_host = gs.getProperty("x_1593191_cooknow.X-RapidAPI-Host", "");&#13;
+  outputs.endpoint = gs.getProperty("x_1593191_cooknow.integration_endpoint_url", "");&#13;
 })(inputs, outputs);&#13;
 &#13;
 </value>
@@ -133,94 +180,10 @@
         <value>35aa573fd7802200bdbaee5b5e610375</value>
         <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_input_1ecf5e93c3df52501f5afb377d013180^id=1ecf5e93c3df52501f5afb377d013180"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_1ecf5e93c3df52501f5afb377d013180^id=1ecf5e93c3df52501f5afb377d013180"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=1ecf5e93c3df52501f5afb377d013180"/>
     <sys_translated_text action="delete_multiple" query="documentkey=1ecf5e93c3df52501f5afb377d013180"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=1ecf5e93c3df52501f5afb377d013180^sys_idNOT IN1ecf5e93c3df52501f5afb377d013186"/>
-    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>parameter</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label/>
-        <mandatory>true</mandatory>
-        <max_length>8000</max_length>
-        <model display_value="Script step">1ecf5e93c3df52501f5afb377d013180</model>
-        <model_id>1ecf5e93c3df52501f5afb377d013180</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_input_1ecf5e93c3df52501f5afb377d013180</name>
-        <next_element/>
-        <order>0</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 04:01:16</sys_created_on>
-        <sys_id>1ecf5e93c3df52501f5afb377d013186</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1ecf5e93c3df52501f5afb377d013180"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=1ecf5e93c3df52501f5afb377d013180^sys_idNOT IN4011a617c3df52501f5afb377d013131,56cf5e93c3df52501f5afb377d01318b,8811a617c3df52501f5afb377d013134,9011a617c3df52501f5afb377d013138"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -262,7 +225,7 @@
         <label>Content-Type</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">1ecf5e93c3df52501f5afb377d013180</model>
+        <model display_value="Variables Initialization">1ecf5e93c3df52501f5afb377d013180</model>
         <model_id>1ecf5e93c3df52501f5afb377d013180</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_1ecf5e93c3df52501f5afb377d013180</name>
@@ -345,7 +308,7 @@
         <label>X-RapidAPI-Key</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">1ecf5e93c3df52501f5afb377d013180</model>
+        <model display_value="Variables Initialization">1ecf5e93c3df52501f5afb377d013180</model>
         <model_id>1ecf5e93c3df52501f5afb377d013180</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_1ecf5e93c3df52501f5afb377d013180</name>
@@ -428,12 +391,12 @@
         <label>Endpoint</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">1ecf5e93c3df52501f5afb377d013180</model>
+        <model display_value="Variables Initialization">1ecf5e93c3df52501f5afb377d013180</model>
         <model_id>1ecf5e93c3df52501f5afb377d013180</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_1ecf5e93c3df52501f5afb377d013180</name>
         <next_element/>
-        <order>3</order>
+        <order>4</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -451,14 +414,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:06:51</sys_created_on>
         <sys_id>8811a617c3df52501f5afb377d013134</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:06:51</sys_updated_on>
+        <sys_updated_on>2025-01-30 04:43:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -511,12 +474,12 @@
         <label>X-RapidAPI-Host</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Script step">1ecf5e93c3df52501f5afb377d013180</model>
+        <model display_value="Variables Initialization">1ecf5e93c3df52501f5afb377d013180</model>
         <model_id>1ecf5e93c3df52501f5afb377d013180</model_id>
         <model_table>sys_hub_step_instance</model_table>
         <name>var__m_sys_hub_step_ext_output_1ecf5e93c3df52501f5afb377d013180</name>
         <next_element/>
-        <order>4</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -534,14 +497,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:06:51</sys_created_on>
         <sys_id>9011a617c3df52501f5afb377d013138</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:06:51</sys_updated_on>
+        <sys_updated_on>2025-01-30 04:43:48</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -657,7 +620,7 @@
         <icon/>
         <inputs/>
         <inputs/>
-        <label>REST step</label>
+        <label>Radidapi Integration</label>
         <order>2</order>
         <outputs/>
         <section/>
@@ -665,10 +628,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:13:11</sys_created_on>
         <sys_id>3c82e297c3df52501f5afb377d013118</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:17:41</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:06:25</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3c82e297c3df52501f5afb377d013118"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -777,13 +740,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:17:41</sys_created_on>
         <sys_id>b283e6d7c3df52501f5afb377d0131f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:17:41</sys_updated_on>
-        <value>{
-  "target_lang": "fr",
-  "text": "hello"
-}</value>
+        <sys_updated_on>2025-01-30 15:48:44</sys_updated_on>
+        <value/>
         <variable display_value="Request Body[Text]">6c6073f1c71003007b237f48cb97633b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -845,11 +805,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:17:41</sys_created_on>
         <sys_id>3283e6d7c3df52501f5afb377d0131f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:17:41</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:06:25</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
+        <value>{
+"target_lang":"en","text":"
+{{action.text}}"
+}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>capabilities</field>
@@ -967,52 +930,127 @@
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_3c82e297c3df52501f5afb377d013118"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="Rapidapi ">dd6b9a5bc39f52501f5afb377d013119</action>
-        <cid>bac8bf5a-30d0-4f1c-8dd8-20f0a8bcb372</cid>
+        <cid>169cbc5d-6bdf-4933-b3fa-901a0a4e672a</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
         <inputs/>
-        <label>JSON Parser step</label>
+        <inputs/>
+        <label>Parser ResponseBody</label>
         <order>3</order>
         <outputs/>
         <section/>
         <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 04:13:11</sys_created_on>
-        <sys_id>8582e297c3df52501f5afb377d013137</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2025-01-30 15:17:02</sys_created_on>
+        <sys_id>557a7ca3c39712101f5afb377d013146</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:13:11</sys_updated_on>
+        <sys_updated_on>2025-01-30 15:17:46</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=8582e297c3df52501f5afb377d013137"/>
+    <sys_variable_value action="delete_multiple" query="document_key=557a7ca3c39712101f5afb377d013146"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>8582e297c3df52501f5afb377d013137</document_key>
+        <document_key>557a7ca3c39712101f5afb377d013146</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:02</sys_created_on>
+        <sys_id>557a7ca3c39712101f5afb377d013150</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:17:02</sys_updated_on>
+        <value>{&#13;
+    "translatedText": "hello",&#13;
+    "message": "Endpoint '/translate/aaaaa' does not exist"&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>557a7ca3c39712101f5afb377d013146</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 04:13:11</sys_created_on>
-        <sys_id>0182e297c3df52501f5afb377d013140</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-01-30 15:17:02</sys_created_on>
+        <sys_id>5d7a7ca3c39712101f5afb377d01314f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:13:11</sys_updated_on>
-        <value>{"name":"__step_status__","children":[{"name":"code","children":[],"type":"integer","jpath":"","previewValue":""},{"name":"message","children":[],"type":"string","jpath":"","previewValue":""}],"type":"object","jpath":"","previewValue":""}</value>
+        <sys_updated_on>2025-01-30 15:17:46</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"translatedText","children":[],"type":"string","jpath":"$.translatedText","previewValue":"hello"},{"name":"message","children":[],"type":"string","jpath":"$.message","previewValue":"Endpoint '/translate/aaaaa' does not exist"}],"type":"object","jpath":"$","previewValue":""}</value>
         <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0^id=8582e297c3df52501f5afb377d013137"/>
-    <sys_translated_text action="delete_multiple" query="documentkey=8582e297c3df52501f5afb377d013137"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=8582e297c3df52501f5afb377d013137"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=8582e297c3df52501f5afb377d013137"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=8582e297c3df52501f5afb377d013137"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_8582e297c3df52501f5afb377d013137"/>
-    <sys_hub_action_input action="delete_multiple" query="model=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN9c63e2d7c3df52501f5afb377d0131b4"/>
-    <sys_hub_action_input action="INSERT_OR_UPDATE">
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_557a7ca3c39712101f5afb377d013146^id=557a7ca3c39712101f5afb377d013146"/>
+    <sys_element_mapping action="delete_multiple" query="id=557a7ca3c39712101f5afb377d013146"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>557a7ca3c39712101f5afb377d013146</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:02</sys_created_on>
+        <sys_id>d97a7ca3c39712101f5afb377d01314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:17:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>557a7ca3c39712101f5afb377d013146</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:02</sys_created_on>
+        <sys_id>197a7ca3c39712101f5afb377d01314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:17:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>557a7ca3c39712101f5afb377d013146</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:02</sys_created_on>
+        <sys_id>517a7ca3c39712101f5afb377d01314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:17:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=557a7ca3c39712101f5afb377d013146"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=557a7ca3c39712101f5afb377d013146"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=557a7ca3c39712101f5afb377d013146^sys_idNOT INc8aa70e3c39712101f5afb377d01311f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDc8aa70e3d3971210eafa224eb381131d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>37601eaec3539e101f5afb377d013106</scope_name>
+        <serialized_content>{"FlowDesigner:FDc8aa70e3d3971210eafa224eb381131d":{"translatedText":"String","translatedText.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"translatedText\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"642caf2d-9acc-44e9-a2c4-13f2093425fe\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1f4de9f7-db6a-4258-b682-e0d38410b43a\"}"}},"FlowDesigner:FDc8aa70e3d3971210eafa224eb381131d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"124b6560-955f-4b47-be24-a09a0bff19ed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc8aa70e3d3971210eafa224eb381131d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ccaa70e3c39712101f5afb377d01311d</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:53</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=multi_small,uiTypeLabel=Multiple Line Small Text Area,uiUniqueId=41a14e52-f000-44fb-b3e5-37f73d218e31</attributes>
+        <attributes>co_type_name=FDc8aa70e3d3971210eafa224eb381131d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=124b6560-955f-4b47-be24-a09a0bff19ed</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1036,7 +1074,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>body</element>
+        <element>root</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -1044,10 +1082,119 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="">multi_small</internal_type>
-        <label>body</label>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>65000</max_length>
+        <model display_value="Parser ResponseBody">557a7ca3c39712101f5afb377d013146</model>
+        <model_id>557a7ca3c39712101f5afb377d013146</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_557a7ca3c39712101f5afb377d013146</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:46</sys_created_on>
+        <sys_id>c8aa70e3c39712101f5afb377d01311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:17:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=557a7ca3c39712101f5afb377d013146"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_557a7ca3c39712101f5afb377d013146^sys_idNOT IN08aa70e3c39712101f5afb377d013123"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_557a7ca3c39712101f5afb377d013146</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:17:46</sys_created_on>
+        <sys_id>08aa70e3c39712101f5afb377d013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:17:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT INd6316967c35b12101f5afb377d01312d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d4bdb3b0-f823-4a50-9119-c92166fcdf79</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>text</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
         <model display_value="Rapidapi ">dd6b9a5bc39f52501f5afb377d013119</model>
         <model_id>dd6b9a5bc39f52501f5afb377d013119</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
@@ -1069,8 +1216,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 04:16:58</sys_created_on>
-        <sys_id>9c63e2d7c3df52501f5afb377d0131b4</sys_id>
+        <sys_created_on>2025-01-30 18:06:24</sys_created_on>
+        <sys_id>d6316967c35b12101f5afb377d01312d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1078,7 +1225,7 @@
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:16:58</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:06:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1091,8 +1238,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c63e2d7c3df52501f5afb377d0131b4"/>
-    <sys_hub_action_output action="delete_multiple" query="model=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN52cf5e93c3df52501f5afb377d0131a0,5acf5e93c3df52501f5afb377d01319a"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d6316967c35b12101f5afb377d01312d"/>
+    <sys_hub_action_output action="delete_multiple" query="model=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN52cf5e93c3df52501f5afb377d0131a0,5acf5e93c3df52501f5afb377d01319a,8d2df0a7c39712101f5afb377d01310f"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1140,7 +1287,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1158,14 +1305,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:01:16</sys_created_on>
         <sys_id>52cf5e93c3df52501f5afb377d0131a0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:17:42</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:06:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1227,7 +1374,7 @@
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1245,14 +1392,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-30 04:01:16</sys_created_on>
         <sys_id>5acf5e93c3df52501f5afb377d01319a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
+        <sys_updated_on>2025-01-30 15:27:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1267,6 +1414,116 @@
     </sys_hub_action_output>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5acf5e93c3df52501f5afb377d01319a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=5acf5e93c3df52501f5afb377d01319a"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD8d2df0a7d99712108da7510ce104500e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>37601eaec3539e101f5afb377d013106</scope_name>
+        <serialized_content>{"FlowDesigner:FD8d2df0a7d99712108da7510ce104500e":{"translatedText":"String","translatedText.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"translatedText\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"642caf2d-9acc-44e9-a2c4-13f2093425fe\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1f4de9f7-db6a-4258-b682-e0d38410b43a\"}"}},"FlowDesigner:FD8d2df0a7d99712108da7510ce104500e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"169cbc5d-6bdf-4933-b3fa-901a0a4e672a\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"textTranslated\",\"mandatory\":\"false\",\"uiUniqueId\":\"4bf5a3cf-67ec-4228-8488-cc8d52f09888\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8d2df0a7d99712108da7510ce104500e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"124b6560-955f-4b47-be24-a09a0bff19ed\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:28:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>412df0a7c39712101f5afb377d01310f</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:53</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD8d2df0a7d99712108da7510ce104500e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=169cbc5d-6bdf-4933-b3fa-901a0a4e672a,sourceType=step,sourceUiUniqueId=124b6560-955f-4b47-be24-a09a0bff19ed,uiType=object,uiTypeLabel=Object,uiUniqueId=4bf5a3cf-67ec-4228-8488-cc8d52f09888</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>textTranslated</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>textTranslated</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Rapidapi ">dd6b9a5bc39f52501f5afb377d013119</model>
+        <model_id>dd6b9a5bc39f52501f5afb377d013119</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:28:45</sys_created_on>
+        <sys_id>8d2df0a7c39712101f5afb377d01310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:28:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8d2df0a7c39712101f5afb377d01310f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d2df0a7c39712101f5afb377d01310f"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=dd6b9a5bc39f52501f5afb377d013119"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN96cf5e93c3df52501f5afb377d0131ac"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
@@ -1278,20 +1535,48 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-01-30 04:01:16</sys_updated_on>
     </sys_hub_action_status_metadata>
-    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=96cf5e93c3df52501f5afb377d0131ac"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN5463e2d7c3df52501f5afb377d0131b9"/>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=96cf5e93c3df52501f5afb377d0131ac^sys_idNOT INe63c3067c39712101f5afb377d013137,ee3c3067c39712101f5afb377d013136"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 30/01/2025 01:01:16">96cf5e93c3df52501f5afb377d0131ac</action_status_metadata_id>
+        <condition>{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].__step_status__}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>Parse Step Failure</label>
+        <order>2</order>
+        <status>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error: check the Rapidapi API URL."}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:24:46</sys_created_on>
+        <sys_id>e63c3067c39712101f5afb377d013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:24:46</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 30/01/2025 01:01:16">96cf5e93c3df52501f5afb377d0131ac</action_status_metadata_id>
+        <condition>{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].error_code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>Rapidapi Step Failure</label>
+        <order>1</order>
+        <status>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error: check the Rapidapi API URL."}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:24:46</sys_created_on>
+        <sys_id>ee3c3067c39712101f5afb377d013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:24:46</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN9a316967c35b12101f5afb377d013131"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>body</element>
+        <element>text</element>
         <help/>
         <hint/>
-        <label>body</label>
+        <label>text</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_dd6b9a5bc39f52501f5afb377d013119</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-30 04:16:59</sys_created_on>
-        <sys_id>5463e2d7c3df52501f5afb377d0131b9</sys_id>
+        <sys_created_on>2025-01-30 18:06:25</sys_created_on>
+        <sys_id>9a316967c35b12101f5afb377d013131</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
@@ -1299,12 +1584,35 @@
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 04:16:59</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:06:25</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_dd6b9a5bc39f52501f5afb377d013119"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN52cf5e93c3df52501f5afb377d01319f,9ecf5e93c3df52501f5afb377d0131a5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119^sys_idNOT IN012df0a7c39712101f5afb377d013114,52cf5e93c3df52501f5afb377d01319f,9ecf5e93c3df52501f5afb377d0131a5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>textTranslated</element>
+        <help/>
+        <hint/>
+        <label>textTranslated</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 15:28:45</sys_created_on>
+        <sys_id>012df0a7c39712101f5afb377d013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 15:28:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
         <help/>
@@ -1352,5 +1660,1656 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_dd6b9a5bc39f52501f5afb377d013119"/>
-    <sys_hub_action_plan action="delete_multiple" query="action_id=dd6b9a5bc39f52501f5afb377d013119"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=dd6b9a5bc39f52501f5afb377d013119^sys_idNOT INf21ed563c35b12101f5afb377d0131c5"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Rapidapi ">dd6b9a5bc39f52501f5afb377d013119</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f21ed563c35b12101f5afb377d0131c5","name":"plan","plan_signature":null}}</plan>
+        <snapshot>c251ad67c35b12101f5afb377d01312e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f21ed563c35b12101f5afb377d0131c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:57</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>rapidapi</internal_name>
+        <label_cache>[{"name":"{{action.body}}","label":"action➛data","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Multiple Line Small Text Area","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"multi_small","uiUniqueId":"41a14e52-f000-44fb-b3e5-37f73d218e31"}},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.text}}","label":"action➛text","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].endpoint}}","label":"step➛Variables Initialization➛Endpoint","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"654e6d2f-a175-4769-b994-7e42c6df3a3e"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_key}}","label":"step➛Variables Initialization➛X-RapidAPI-Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1876fdda-0043-4646-9dba-6aac470872e2"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_host}}","label":"step➛Variables Initialization➛X-RapidAPI-Host","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"497b9223-0237-4850-ad77-3b37c71f03cd"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].content_type}}","label":"step➛Variables Initialization➛Content-Type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"d32f98aa-fce8-4751-840d-c68e11da0099"}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].response_body}}","label":"step➛Radidapi Integration➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].__step_status__.code}}","label":"step➛Radidapi Integration➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].error_code}}","label":"step➛Radidapi Integration➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].__step_status__.code}}","label":"step➛Variables Initialization➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].__step_status__}}","label":"step➛Radidapi Integration➛Step Status","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[169cbc5d-6bdf-4933-b3fa-901a0a4e672a].root}}","label":"step➛Parser ResponseBody➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDc8aa70e3d3971210eafa224eb381131d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"124b6560-955f-4b47-be24-a09a0bff19ed"}}]</label_cache>
+        <master>true</master>
+        <name>Rapidapi </name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Rapidapi ">dd6b9a5bc39f52501f5afb377d013119</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c21e9563c35b12101f5afb377d0131d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:54</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c21e9563c35b12101f5afb377d0131d7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c21e9563c35b12101f5afb377d0131d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>c21e9563c35b12101f5afb377d0131d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>921ed563c35b12101f5afb377d013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">9e1ed563c35b12101f5afb377d01313a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>c21e9563c35b12101f5afb377d0131d7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>de1ed563c35b12101f5afb377d013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">921ed563c35b12101f5afb377d01313f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c21e9563c35b12101f5afb377d0131d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>textTranslated</field>
+        <id>c21e9563c35b12101f5afb377d0131d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>d61ed563c35b12101f5afb377d013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</table>
+        <value>{{step[169cbc5d-6bdf-4933-b3fa-901a0a4e672a].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>c21e9563c35b12101f5afb377d0131d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>5e1ed563c35b12101f5afb377d013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>c21e9563c35b12101f5afb377d0131d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9a1ed563c35b12101f5afb377d013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=c21e9563c35b12101f5afb377d0131d7^sys_idNOT IN1e1e9563c35b12101f5afb377d0131fe,c21e9563c35b12101f5afb377d0131e4,da1ed563c35b12101f5afb377d013126"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</action>
+        <cid>2aada58d-b64a-43ed-a7b0-00bf4fc84c2a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Radidapi Integration</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>1e1e9563c35b12101f5afb377d0131fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1e1e9563c35b12101f5afb377d0131fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>161ed563c35b12101f5afb377d013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>1a1ed563c35b12101f5afb377d013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>521ed563c35b12101f5afb377d013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>561ed563c35b12101f5afb377d013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>921ed563c35b12101f5afb377d013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9e1ed563c35b12101f5afb377d013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>d61ed563c35b12101f5afb377d013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>da1ed563c35b12101f5afb377d013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1e1e9563c35b12101f5afb377d0131fe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>de1ed563c35b12101f5afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1e1e9563c35b12101f5afb377d0131fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>d61ed563c35b12101f5afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>161ed563c35b12101f5afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[a45b3629-5157-4668-a15c-8c3cd8952180].endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>921ed563c35b12101f5afb377d013120</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{
+"target_lang":"en","text":"
+{{action.text}}"
+}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>521ed563c35b12101f5afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>da1ed563c35b12101f5afb377d013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>5e1ed563c35b12101f5afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9e1ed563c35b12101f5afb377d013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"Content-Type","value":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].content_type}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"X-RapidAPI-Host","value":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_host}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"X-RapidAPI-Key","value":"{{step[a45b3629-5157-4668-a15c-8c3cd8952180].x_rapidapi_key}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>de1ed563c35b12101f5afb377d01311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>561ed563c35b12101f5afb377d013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>1a1ed563c35b12101f5afb377d013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>1e1e9563c35b12101f5afb377d0131fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9a1ed563c35b12101f5afb377d013121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=1e1e9563c35b12101f5afb377d0131fe"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1e1e9563c35b12101f5afb377d0131fe"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1e1e9563c35b12101f5afb377d0131fe"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1e1e9563c35b12101f5afb377d0131fe^sys_idNOT IN521ed563c35b12101f5afb377d01311e"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>body</input_name>
+        <instance>1e1e9563c35b12101f5afb377d0131fe</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"body":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>521ed563c35b12101f5afb377d01311e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_1e1e9563c35b12101f5afb377d0131fe"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</action>
+        <cid>a45b3629-5157-4668-a15c-8c3cd8952180</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Variables Initialization</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>c21e9563c35b12101f5afb377d0131e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c21e9563c35b12101f5afb377d0131e4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c21e9563c35b12101f5afb377d0131e4</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>5a1e9563c35b12101f5afb377d0131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+  outputs.x_rapidapi_key = gs.getProperty("x_1593191_cooknow.integration_apikey", 0);&#13;
+  outputs.content_type = gs.getProperty("x_1593191_cooknow.Content-Type", "");&#13;
+  outputs.x_rapidapi_host = gs.getProperty("x_1593191_cooknow.X-RapidAPI-Host", "");&#13;
+  outputs.endpoint = gs.getProperty("x_1593191_cooknow.integration_endpoint_url", "");&#13;
+})(inputs, outputs);&#13;
+&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c21e9563c35b12101f5afb377d0131e4</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>961e9563c35b12101f5afb377d0131fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4^id=c21e9563c35b12101f5afb377d0131e4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=c21e9563c35b12101f5afb377d0131e4"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c21e9563c35b12101f5afb377d0131e4"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c21e9563c35b12101f5afb377d0131e4"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c21e9563c35b12101f5afb377d0131e4^sys_idNOT IN0a1e9563c35b12101f5afb377d0131e8,421e9563c35b12101f5afb377d0131f0,4a1e9563c35b12101f5afb377d0131ec,5a1e9563c35b12101f5afb377d0131f3"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1876fdda-0043-4646-9dba-6aac470872e2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>x_rapidapi_key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>X-RapidAPI-Key</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Variables Initialization">c21e9563c35b12101f5afb377d0131e4</model>
+        <model_id>c21e9563c35b12101f5afb377d0131e4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>0a1e9563c35b12101f5afb377d0131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=497b9223-0237-4850-ad77-3b37c71f03cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>x_rapidapi_host</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>X-RapidAPI-Host</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Variables Initialization">c21e9563c35b12101f5afb377d0131e4</model>
+        <model_id>c21e9563c35b12101f5afb377d0131e4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>421e9563c35b12101f5afb377d0131f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d32f98aa-fce8-4751-840d-c68e11da0099</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Content-Type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Variables Initialization">c21e9563c35b12101f5afb377d0131e4</model>
+        <model_id>c21e9563c35b12101f5afb377d0131e4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>4a1e9563c35b12101f5afb377d0131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=654e6d2f-a175-4769-b994-7e42c6df3a3e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>endpoint</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Endpoint</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Variables Initialization">c21e9563c35b12101f5afb377d0131e4</model>
+        <model_id>c21e9563c35b12101f5afb377d0131e4</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>5a1e9563c35b12101f5afb377d0131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c21e9563c35b12101f5afb377d0131e4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4^sys_idNOT IN421e9563c35b12101f5afb377d0131ef,4a1e9563c35b12101f5afb377d0131eb,521e9563c35b12101f5afb377d0131f6,5a1e9563c35b12101f5afb377d0131f2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>content_type</element>
+        <help/>
+        <hint/>
+        <label>Content-Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>421e9563c35b12101f5afb377d0131ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>x_rapidapi_key</element>
+        <help/>
+        <hint/>
+        <label>X-RapidAPI-Key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>4a1e9563c35b12101f5afb377d0131eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>endpoint</element>
+        <help/>
+        <hint/>
+        <label>Endpoint</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>521e9563c35b12101f5afb377d0131f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>x_rapidapi_host</element>
+        <help/>
+        <hint/>
+        <label>X-RapidAPI-Host</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c21e9563c35b12101f5afb377d0131e4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:44</sys_created_on>
+        <sys_id>5a1e9563c35b12101f5afb377d0131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</action>
+        <cid>169cbc5d-6bdf-4933-b3fa-901a0a4e672a</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Parser ResponseBody</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>da1ed563c35b12101f5afb377d013126</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=da1ed563c35b12101f5afb377d013126"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>da1ed563c35b12101f5afb377d013126</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>961ed563c35b12101f5afb377d013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>{&#13;
+    "translatedText": "hello",&#13;
+    "message": "Endpoint '/translate/aaaaa' does not exist"&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>da1ed563c35b12101f5afb377d013126</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>d21ed563c35b12101f5afb377d013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"translatedText","children":[],"type":"string","jpath":"$.translatedText","previewValue":"hello"},{"name":"message","children":[],"type":"string","jpath":"$.message","previewValue":"Endpoint '/translate/aaaaa' does not exist"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_da1ed563c35b12101f5afb377d013126^id=da1ed563c35b12101f5afb377d013126"/>
+    <sys_element_mapping action="delete_multiple" query="id=da1ed563c35b12101f5afb377d013126"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>da1ed563c35b12101f5afb377d013126</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>521ed563c35b12101f5afb377d013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>da1ed563c35b12101f5afb377d013126</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9e1ed563c35b12101f5afb377d013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>da1ed563c35b12101f5afb377d013126</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>da1ed563c35b12101f5afb377d013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=da1ed563c35b12101f5afb377d013126"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=da1ed563c35b12101f5afb377d013126"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=da1ed563c35b12101f5afb377d013126^sys_idNOT IN1a1ed563c35b12101f5afb377d01312a"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1a1ed5633f5b12107deef77359b34329</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>37601eaec3539e101f5afb377d013106</scope_name>
+        <serialized_content>{"FlowDesigner:FD1a1ed5633f5b12107deef77359b34329":{"translatedText":"String","translatedText.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"translatedText\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"642caf2d-9acc-44e9-a2c4-13f2093425fe\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1f4de9f7-db6a-4258-b682-e0d38410b43a\"}"}},"FlowDesigner:FD1a1ed5633f5b12107deef77359b34329.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"124b6560-955f-4b47-be24-a09a0bff19ed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD1a1ed5633f5b12107deef77359b34329\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da1ed563c35b12101f5afb377d013129</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD1a1ed5633f5b12107deef77359b34329,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=124b6560-955f-4b47-be24-a09a0bff19ed</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parser ResponseBody">da1ed563c35b12101f5afb377d013126</model>
+        <model_id>da1ed563c35b12101f5afb377d013126</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_da1ed563c35b12101f5afb377d013126</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>1a1ed563c35b12101f5afb377d01312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=da1ed563c35b12101f5afb377d013126"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_da1ed563c35b12101f5afb377d013126^sys_idNOT IN9a1ed563c35b12101f5afb377d01312d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_da1ed563c35b12101f5afb377d013126</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9a1ed563c35b12101f5afb377d01312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=c21e9563c35b12101f5afb377d0131d7^sys_idNOT INbd516d67c35b12101f5afb377d0131c0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d4bdb3b0-f823-4a50-9119-c92166fcdf79</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>text</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</model>
+        <model_id>c21e9563c35b12101f5afb377d0131d7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_c21e9563c35b12101f5afb377d0131d7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 18:06:54</sys_created_on>
+        <sys_id>bd516d67c35b12101f5afb377d0131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bd516d67c35b12101f5afb377d0131c0"/>
+    <sys_hub_action_output action="delete_multiple" query="model=c21e9563c35b12101f5afb377d0131d7^sys_idNOT IN921ed563c35b12101f5afb377d01313f,9e1ed563c35b12101f5afb377d01313a,de1ed563c35b12101f5afb377d013135"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=4b26db68-ce44-4452-9ea0-285754e107a2,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</model>
+        <model_id>c21e9563c35b12101f5afb377d0131d7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>921ed563c35b12101f5afb377d01313f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=921ed563c35b12101f5afb377d01313f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=921ed563c35b12101f5afb377d01313f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=dc3d67aa-4a28-40d2-860e-1a8559403751</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</model>
+        <model_id>c21e9563c35b12101f5afb377d0131d7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9e1ed563c35b12101f5afb377d01313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9e1ed563c35b12101f5afb377d01313a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9e1ed563c35b12101f5afb377d01313a"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDde1ed563e35b121012a680eef3d41534</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>37601eaec3539e101f5afb377d013106</scope_name>
+        <serialized_content>{"FlowDesigner:FDde1ed563e35b121012a680eef3d41534":{"translatedText":"String","translatedText.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"translatedText\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"642caf2d-9acc-44e9-a2c4-13f2093425fe\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"message\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"1f4de9f7-db6a-4258-b682-e0d38410b43a\"}"}},"FlowDesigner:FDde1ed563e35b121012a680eef3d41534.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"169cbc5d-6bdf-4933-b3fa-901a0a4e672a\",\"pwd2droppable\":\"true\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"textTranslated\",\"mandatory\":\"false\",\"uiUniqueId\":\"4bf5a3cf-67ec-4228-8488-cc8d52f09888\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDde1ed563e35b121012a680eef3d41534\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"124b6560-955f-4b47-be24-a09a0bff19ed\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>921ed563c35b12101f5afb377d013135</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDde1ed563e35b121012a680eef3d41534,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,sourceId=169cbc5d-6bdf-4933-b3fa-901a0a4e672a,sourceType=step,sourceUiUniqueId=124b6560-955f-4b47-be24-a09a0bff19ed,uiType=object,uiTypeLabel=Object,uiUniqueId=4bf5a3cf-67ec-4228-8488-cc8d52f09888</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>textTranslated</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>textTranslated</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</model>
+        <model_id>c21e9563c35b12101f5afb377d0131d7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>de1ed563c35b12101f5afb377d013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=de1ed563c35b12101f5afb377d013135"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=de1ed563c35b12101f5afb377d013135"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c21e9563c35b12101f5afb377d0131d7"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=c21e9563c35b12101f5afb377d0131d7^sys_idNOT IN521ed563c35b12101f5afb377d013158"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Rapidapi ">c21e9563c35b12101f5afb377d0131d7</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>521ed563c35b12101f5afb377d013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=521ed563c35b12101f5afb377d013158^sys_idNOT IN4a51ad67c35b12101f5afb377d01312d,c651ad67c35b12101f5afb377d01312d"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 30/01/2025 14:52:45">521ed563c35b12101f5afb377d013158</action_status_metadata_id>
+        <condition>{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].__step_status__}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>Parse Step Failure</label>
+        <order>2</order>
+        <status>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error: check the Rapidapi API URL."}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 18:06:55</sys_created_on>
+        <sys_id>4a51ad67c35b12101f5afb377d01312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 30/01/2025 14:52:45">521ed563c35b12101f5afb377d013158</action_status_metadata_id>
+        <condition>{{step[2aada58d-b64a-43ed-a7b0-00bf4fc84c2a].error_code}}=1</condition>
+        <dont_treat_as_error>false</dont_treat_as_error>
+        <label>Rapidapi Step Failure</label>
+        <order>1</order>
+        <status>{"version":"1.0","serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error: check the Rapidapi API URL."}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 18:06:55</sys_created_on>
+        <sys_id>c651ad67c35b12101f5afb377d01312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:55</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c21e9563c35b12101f5afb377d0131d7^sys_idNOT IN39516d67c35b12101f5afb377d0131c4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>text</element>
+        <help/>
+        <hint/>
+        <label>text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c21e9563c35b12101f5afb377d0131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 18:06:54</sys_created_on>
+        <sys_id>39516d67c35b12101f5afb377d0131c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 18:06:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_c21e9563c35b12101f5afb377d0131d7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7^sys_idNOT IN161ed563c35b12101f5afb377d013144,921ed563c35b12101f5afb377d01313e,9e1ed563c35b12101f5afb377d013139"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>161ed563c35b12101f5afb377d013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>921ed563c35b12101f5afb377d01313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>textTranslated</element>
+        <help/>
+        <hint/>
+        <label>textTranslated</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 17:52:45</sys_created_on>
+        <sys_id>9e1ed563c35b12101f5afb377d013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 17:52:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_c21e9563c35b12101f5afb377d0131d7"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>dd6b9a5bc39f52501f5afb377d013119</sys_id>
+        <latest_snapshot>c21e9563c35b12101f5afb377d0131d7</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_action_type_definition>
 </record_update>
