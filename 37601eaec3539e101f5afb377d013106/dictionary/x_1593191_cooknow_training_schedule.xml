@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c8a45ee2c3939e101f5afb377d013179" label="Training Schedule" max_length="40" name="x_1593191_cooknow_training_schedule" type="collection">
-        <element display="true" label="Date" mandatory="true" max_length="40" name="date" type="glide_date"/>
+        <element label="Date" mandatory="true" max_length="40" name="date" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return current.training.name + &quot; - &quot; + current.date.getDisplayValue();  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="Training and Date" max_length="40" name="training_date" read_only="true" type="string" virtual="true"/>
         <element label="Available Seats" max_length="40" name="available_seats" type="integer"/>
         <element label="Instructor" max_length="32" name="instructor" reference="sys_user" reference_qual="javascript:new getUserInstructorRole().getInstructorUser();" type="reference" use_reference_qualifier="advanced"/>
         <element label="Training" max_length="32" name="training" reference="x_1593191_cooknow_training" type="reference"/>

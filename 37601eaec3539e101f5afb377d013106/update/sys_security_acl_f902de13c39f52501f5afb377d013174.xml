@@ -14,16 +14,16 @@
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-27 19:17:08</sys_created_on>
-        <sys_id>85a45ee2c3939e101f5afb377d013173</sys_id>
+        <sys_created_on>2025-01-30 03:01:10</sys_created_on>
+        <sys_id>f902de13c39f52501f5afb377d013174</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_1593191_cooknow_training_schedule</sys_name>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
-        <sys_update_name>sys_security_acl_85a45ee2c3939e101f5afb377d013173</sys_update_name>
+        <sys_update_name>sys_security_acl_f902de13c39f52501f5afb377d013174</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-27 19:17:08</sys_updated_on>
+        <sys_updated_on>2025-01-30 03:01:10</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

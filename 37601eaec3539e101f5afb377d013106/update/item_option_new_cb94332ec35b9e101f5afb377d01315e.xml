@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
-        <attributes/>
+        <attributes>ref_ac_order_by=date</attributes>
         <cat_item display_value="Registration">7279e3aec31b9e101f5afb377d01319c</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
@@ -57,8 +57,8 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_1593191_cooknow_registration</record_producer_table>
-        <reference>x_1593191_cooknow_training</reference>
-        <reference_qual/>
+        <reference>x_1593191_cooknow_training_schedule</reference>
+        <reference_qual>javascript:new x_1593191_cooknow.TrainingFilter().getAvailableTrainings()</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 02:22:08</sys_created_on>
         <sys_id>cb94332ec35b9e101f5afb377d01315e</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Training</sys_name>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name>item_option_new_cb94332ec35b9e101f5afb377d01315e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-28 12:37:08</sys_updated_on>
+        <sys_updated_on>2025-01-29 22:56:28</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -94,7 +94,7 @@
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

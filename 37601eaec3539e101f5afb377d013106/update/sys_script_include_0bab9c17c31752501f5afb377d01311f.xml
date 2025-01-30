@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1593191_cooknow.TrainingFilter</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TrainingFilter</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TrainingFilter = Class.create();
+TrainingFilter.prototype = {
+    initialize: function() {},
+
+    getAvailableTrainings: function() {
+        var scheduledTrainings = [];
+        var currentUser = gs.getUserID();
+        var today = new GlideDate();
+        today.setValue(new GlideDateTime().getLocalDate().toString());
+
+        var grRegistration = new GlideRecord('x_1593191_cooknow_registration');
+        grRegistration.addEncodedQuery("opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=4");
+        grRegistration.query();
+
+        while (grRegistration.next()) {
+            scheduledTrainings.push(grRegistration.training.sys_id.toString());
+        }
+
+        var availableTrainings = [];
+        var grTrainingSchedule = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grTrainingSchedule.addQuery('date', '>', today); // Filtra apenas treinamentos futuros
+        grTrainingSchedule.query();
+
+        while (grTrainingSchedule.next()) {
+            var instructorID = grTrainingSchedule.instructor;
+            var seats = grTrainingSchedule.seats;
+            var enrolledCount = this.getEnrolledCount(grTrainingSchedule.getUniqueValue());
+
+            if (instructorID != currentUser && enrolledCount < seats && scheduledTrainings.indexOf(grTrainingSchedule.getUniqueValue()) == -1) {
+                var calendarList = this.getTrainingCalendar(grTrainingSchedule.training);
+                var totalEnrollments = this.getTotalEnrollments(calendarList, currentUser);
+
+                if (totalEnrollments < 3) { // Limita inscrições a 3 por tipo de treinamento
+                    availableTrainings.push(grTrainingSchedule.getUniqueValue());
+                }
+            }
+        }
+        return 'sys_idIN' + availableTrainings.join(',');
+    },
+
+    getEnrolledCount: function(trainingSysId) {
+        var grRegistration = new GlideRecord('x_1593191_cooknow_registration');
+        grRegistration.addQuery('training', trainingSysId);
+        grRegistration.addQuery('state', '!=', 4);
+        grRegistration.query();
+        return grRegistration.getRowCount();
+    },
+
+    getTrainingCalendar: function(trainingId) {
+        var calendarList = [];
+        var grCalendarList = new GlideRecord("x_1593191_cooknow_training_schedule");
+        grCalendarList.addQuery('training', trainingId);
+        grCalendarList.query();
+
+        while (grCalendarList.next()) {
+            calendarList.push(grCalendarList.getUniqueValue());
+        }
+        return calendarList;
+    },
+
+    getTotalEnrollments: function(calendarList, userId) {
+        var grRegTotalSameTraining = new GlideRecord('x_1593191_cooknow_registration');
+        grRegTotalSameTraining.addEncodedQuery("opened_by=" + userId + "^trainingIN" + calendarList.join(','));
+        grRegTotalSameTraining.query();
+        return grRegTotalSameTraining.getRowCount();
+    },
+
+    type: 'TrainingFilter'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 18:25:10</sys_created_on>
+        <sys_id>0bab9c17c31752501f5afb377d01311f</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>TrainingFilter</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_include_0bab9c17c31752501f5afb377d01311f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 03:23:53</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>0bab9c17c31752501f5afb377d01311f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 18:25:10</sys_created_on>
+        <sys_id>5bebd0d7c31752501f5afb377d0131f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 18:25:10</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
