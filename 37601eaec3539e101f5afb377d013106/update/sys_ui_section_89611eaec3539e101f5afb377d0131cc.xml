@@ -4,13 +4,13 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 18:30:38</sys_created_on>
-            <sys_id>d5c6e56fc35b12101f5afb377d013121</sys_id>
+            <sys_created_on>2025-01-30 19:31:52</sys_created_on>
+            <sys_id>06c471e3c3db12101f5afb377d013130</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593191_cooknow_training" sys_domain="global" view="Default view">89611eaec3539e101f5afb377d0131cc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 18:30:38</sys_updated_on>
+            <sys_updated_on>2025-01-30 19:31:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>summary</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 18:30:38</sys_created_on>
-            <sys_id>15c6e56fc35b12101f5afb377d013122</sys_id>
+            <sys_created_on>2025-01-30 19:31:52</sys_created_on>
+            <sys_id>42c471e3c3db12101f5afb377d013131</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593191_cooknow_training" sys_domain="global" view="Default view">89611eaec3539e101f5afb377d0131cc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 18:30:38</sys_updated_on>
+            <sys_updated_on>2025-01-30 19:31:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,27 +32,41 @@
             <element>english_summary</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 18:30:38</sys_created_on>
-            <sys_id>1dc6e56fc35b12101f5afb377d013122</sys_id>
+            <sys_created_on>2025-01-30 19:31:52</sys_created_on>
+            <sys_id>0ec471e3c3db12101f5afb377d01316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593191_cooknow_training" sys_domain="global" view="Default view">89611eaec3539e101f5afb377d0131cc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 18:30:38</sys_updated_on>
+            <sys_updated_on>2025-01-30 19:31:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>integration_status</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-30 19:31:52</sys_created_on>
+            <sys_id>06c471e3c3db12101f5afb377d013170</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1593191_cooknow_training" sys_domain="global" view="Default view">89611eaec3539e101f5afb377d0131cc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-30 19:31:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>integration_error_message</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 18:30:38</sys_created_on>
-            <sys_id>15c6e56fc35b12101f5afb377d013123</sys_id>
+            <sys_created_on>2025-01-30 19:31:52</sys_created_on>
+            <sys_id>0ec471e3c3db12101f5afb377d013170</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1593191_cooknow_training" sys_domain="global" view="Default view">89611eaec3539e101f5afb377d0131cc</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 18:30:38</sys_updated_on>
+            <sys_updated_on>2025-01-30 19:31:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
