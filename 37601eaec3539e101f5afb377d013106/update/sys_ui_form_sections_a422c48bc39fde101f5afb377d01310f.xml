@@ -14,20 +14,6 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-01-28 21:54:00</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-30 13:44:58</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>ac65a4a7c31712101f5afb377d013185</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_1593191_cooknow_registration" name="x_1593191_cooknow_registration" sys_domain="global" view="Default view">a422c48bc39fde101f5afb377d01310f</sys_ui_form>
-            <sys_ui_section caption="Full Schedule" display_value="Full Schedule" name="x_1593191_cooknow_registration" sys_domain="global" view="Default view">2865a4a7c31712101f5afb377d01312c</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-30 13:44:58</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1593191_cooknow_registration</name>
             <roles/>

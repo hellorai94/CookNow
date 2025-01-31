@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1593191_cooknow_registration</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Delete Registration</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 16:51:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92df09efc3d712101f5afb377d013111</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Delete Registration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_script_92df09efc3d712101f5afb377d013111</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:53:28</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=92df09efc3d712101f5afb377d013111"/>
+    <sys_es_latest_script action="DELETE">
+        <id>92df09efc3d712101f5afb377d013111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 16:51:50</sys_created_on>
+        <sys_id>8a20ddebc3d712101f5afb377d013152</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:51:50</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_script_92df09efc3d712101f5afb377d013111</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;true&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1593191_cooknow_registration&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Delete Registration&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 16:51:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;92df09efc3d712101f5afb377d013111&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Delete Registration&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_92df09efc3d712101f5afb377d013111&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-30 16:53:28&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=92df09efc3d712101f5afb377d013111"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;92df09efc3d712101f5afb377d013111&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-30 16:51:50&lt;/sys_created_on&gt;&lt;sys_id&gt;8a20ddebc3d712101f5afb377d013152&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-30 16:51:50&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2047441182</payload_hash>
+        <record_name>Delete Registration</record_name>
+        <reverted_from/>
+        <source>3515e65bc3df52501f5afb377d0131b1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-30 16:53:28</sys_created_on>
+        <sys_id>8680d123c31b12101f5afb377d01317d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b821c6730000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-30 16:53:28</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>4a80d1230a1b12108c34bd5eaf64067c</update_guid>
+        <update_guid_history>4a80d1230a1b12108c34bd5eaf64067c:2047441182,5a301123711b1210a551e539b96ae210:-451968659,3720ddebbad712101f6a65863882b557:780440998,c62015ef46d71210cc2b150c8e9199ae:-451968659,c90055ef6ed71210d1014cebcb5aae01:-458431065</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 12:26:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>97c63ec9ded64d2d958d9336a6783879</sys_id>
+        <sys_metadata>92df09efc3d712101f5afb377d013111</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delete Registration</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent display_value="Registration">24c7dae6c3939e101f5afb377d0131f9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_script_92df09efc3d712101f5afb377d013111</sys_update_name>
+        <sys_update_version display_value="sys_script_92df09efc3d712101f5afb377d013111">8680d123c31b12101f5afb377d01317d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 12:26:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

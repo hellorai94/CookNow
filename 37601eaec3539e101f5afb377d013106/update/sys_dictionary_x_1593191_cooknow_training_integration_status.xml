@@ -10,13 +10,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
+        <choice>3</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Integration Status</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Starting</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name>sys_dictionary_x_1593191_cooknow_training_integration_status</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 19:36:51</sys_updated_on>
+        <sys_updated_on>2025-01-30 22:35:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

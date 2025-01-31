@@ -5,25 +5,29 @@
         <api_name>x_1593191_cooknow.DateDuplicate</api_name>
         <caller_access/>
         <client_callable>true</client_callable>
-        <description/>
+        <description>Verificar se as datas são duplicadas</description>
         <mobile_callable>false</mobile_callable>
         <name>DateDuplicate</name>
         <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var DateDuplicate = Class.create();
 DateDuplicate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     checkDuplicates: function() {
+		// pega os parametros
         var date = this.getParameter("sysparm_date");  
         var training = this.getParameter("sysparm_trainingSysId");
+		// cria objeto para a tabela de schedule
         var grTraining = new GlideRecord("x_1593191_cooknow_training_schedule");
 
+		// busca os registros com o mesmo nome e mesma data e faz a consulta no banco de dados
         grTraining.addQuery("training", training);
         grTraining.addQuery("date", date);  
         grTraining.query();
 
+		// verifica se encontrou algum registro com o mesmo nome e data
         if (grTraining.next()) {
-            return true;  
+            return true;  // se sim
         } else {
-            return false;  
+            return false;   // se não
         }
     },
     type: 'DateDuplicate'
@@ -32,14 +36,14 @@ DateDuplicate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 19:26:40</sys_created_on>
         <sys_id>9110af3ec3dbde101f5afb377d0131a0</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>DateDuplicate</sys_name>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
         <sys_policy/>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name>sys_script_include_9110af3ec3dbde101f5afb377d0131a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-28 20:40:36</sys_updated_on>
+        <sys_updated_on>2025-01-31 13:37:54</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>9110af3ec3dbde101f5afb377d0131a0</id>

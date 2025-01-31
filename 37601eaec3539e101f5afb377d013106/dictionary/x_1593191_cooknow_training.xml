@@ -3,10 +3,11 @@
         <element label="Integration Error Message" max_length="40" name="integration_error_message" type="string"/>
         <element display="true" label="Name" max_length="40" name="name" type="string"/>
         <element label="Summary" max_length="400" name="summary" type="string"/>
-        <element choice="1" label="Integration Status" max_length="40" name="integration_status" read_only="true" type="choice">
+        <element choice="3" default="Starting" label="Integration Status" max_length="40" name="integration_status" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Intregation Failure" value="4"/>
                 <element inactive_on_update="false" label="Intregating" value="1"/>
+                <element inactive_on_update="false" label="Starting" value="2"/>
                 <element inactive_on_update="false" label="Successful Integration" value="3"/>
             </choice>
         </element>

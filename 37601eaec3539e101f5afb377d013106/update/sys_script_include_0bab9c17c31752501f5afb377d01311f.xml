@@ -12,54 +12,70 @@
         <script><![CDATA[var TrainingFilter = Class.create();
 TrainingFilter.prototype = {
     initialize: function() {},
-
+    // retornar os treinamentos disponiveis 
     getAvailableTrainings: function() {
+        // armazenar os treinamentos disponiveis para o user
         var scheduledTrainings = [];
+        // pega o sys_id do user
         var currentUser = gs.getUserID();
+        // obtem a data de hoje
         var today = new GlideDate();
         today.setValue(new GlideDateTime().getLocalDate().toString());
 
+        // buscar os treinamentos que o usuário já tá inscrito	
         var grRegistration = new GlideRecord('x_1593191_cooknow_registration');
+        // filtra pelo usuario atual e o state não é 'reproved'
         grRegistration.addEncodedQuery("opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=4");
         grRegistration.query();
 
+        // add os treinamentos nos quais o usuário já está inscrito
         while (grRegistration.next()) {
             scheduledTrainings.push(grRegistration.training.sys_id.toString());
         }
 
+		// coloca os treinamentos já disponiveis
         var availableTrainings = [];
         var grTrainingSchedule = new GlideRecord("x_1593191_cooknow_training_schedule");
-        grTrainingSchedule.addQuery('date', '>', today); // Filtra apenas treinamentos futuros
+		// mostra só os treinamentos que ainda não aconteceram
+        grTrainingSchedule.addQuery('date', '>', today); 
         grTrainingSchedule.query();
 
+		// itera os treinamentos disponiveis, pegando o instrutor, a quantidade de vagas e a quantidade de inscritos
         while (grTrainingSchedule.next()) {
             var instructorID = grTrainingSchedule.instructor;
             var seats = grTrainingSchedule.seats;
             var enrolledCount = this.getEnrolledCount(grTrainingSchedule.getUniqueValue());
-
+			
+			// verifica se o user não é o instrutor, se ainda tem vagas e se o user ainda não tá inscrito no treinamento
             if (instructorID != currentUser && enrolledCount < seats && scheduledTrainings.indexOf(grTrainingSchedule.getUniqueValue()) == -1) {
                 var calendarList = this.getTrainingCalendar(grTrainingSchedule.training);
                 var totalEnrollments = this.getTotalEnrollments(calendarList, currentUser);
-
-                if (totalEnrollments < 3) { // Limita inscrições a 3 por tipo de treinamento
+				
+				// Limita inscrições a 3 por tipo de treinamento
+                if (totalEnrollments < 3) { 
                     availableTrainings.push(grTrainingSchedule.getUniqueValue());
                 }
             }
         }
+		// retorna os treinamentos disponiveis
         return 'sys_idIN' + availableTrainings.join(',');
     },
 
+	// retorna a quantidade de usuários inscritos em determinado treinamento, verificando as que o state não é 4
     getEnrolledCount: function(trainingSysId) {
         var grRegistration = new GlideRecord('x_1593191_cooknow_registration');
         grRegistration.addQuery('training', trainingSysId);
         grRegistration.addQuery('state', '!=', 4);
         grRegistration.query();
+		// retorna o cont dos inscritos
         return grRegistration.getRowCount();
     },
-
+	
+	// retorna todos os agendamentos de um treinamento
     getTrainingCalendar: function(trainingId) {
         var calendarList = [];
         var grCalendarList = new GlideRecord("x_1593191_cooknow_training_schedule");
+		// filtra os registros por treinamento
         grCalendarList.addQuery('training', trainingId);
         grCalendarList.query();
 
@@ -69,6 +85,7 @@ TrainingFilter.prototype = {
         return calendarList;
     },
 
+	// retorna a qntd de treinamento do mesmo tipo que o user tá inscrito
     getTotalEnrollments: function(calendarList, userId) {
         var grRegTotalSameTraining = new GlideRecord('x_1593191_cooknow_registration');
         grRegTotalSameTraining.addEncodedQuery("opened_by=" + userId + "^trainingIN" + calendarList.join(','));
@@ -82,14 +99,14 @@ TrainingFilter.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-29 18:25:10</sys_created_on>
         <sys_id>0bab9c17c31752501f5afb377d01311f</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>TrainingFilter</sys_name>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name>sys_script_include_0bab9c17c31752501f5afb377d01311f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 03:23:53</sys_updated_on>
+        <sys_updated_on>2025-01-31 15:04:15</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>0bab9c17c31752501f5afb377d01311f</id>

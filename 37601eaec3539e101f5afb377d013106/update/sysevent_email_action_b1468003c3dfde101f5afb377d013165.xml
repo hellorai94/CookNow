@@ -37,7 +37,7 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Hello ${opened_by},</p>
-<p>You registration in the training "${training.name}" on ${schedule} it was reproved.</p>
+<p>You registration in the training ${training.training_date} it was reproved.</p>
 <p>Best regards, &nbsp;<br>The CookNow Team.</p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -52,7 +52,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Registration Reproved</subject>
+        <subject>Registration Reproved - ${training.training_date}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -60,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b1468003c3dfde101f5afb377d013165</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Enrollment Reproved</sys_name>
         <sys_overrides/>
         <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
@@ -68,7 +68,7 @@
         <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
         <sys_update_name>sysevent_email_action_b1468003c3dfde101f5afb377d013165</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-28 22:12:06</sys_updated_on>
+        <sys_updated_on>2025-01-30 23:00:52</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>

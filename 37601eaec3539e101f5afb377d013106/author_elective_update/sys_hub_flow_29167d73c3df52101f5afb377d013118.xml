@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3546000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>c7620f6bc35352101f5afb377d01317e</copied_from>
+        <copied_from_name>Report Intructor</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>copy_of_report_intructor_3</internal_name>
+        <label_cache>[{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.instructor.name","label":"2 - Look Up Record➛Training Schedule Record➛Instructor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{}},{"name":"flow_variable.variable","label":"Flow Variables➛variable","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null],"65213b4a-47d4-4c66-b259-54d2ea4bbda1":["lista-1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e4cc1504-53c3-4692-ac19-5cd296312d2d"}},{"name":"f32c388b-2509-4cad-909d-d4f1aac2c7a9.Records","label":"3 - Look Up Records➛Registration Records","reference":"x_1593191_cooknow_registration","reference_display":"Registration","type":"records","base_type":"records","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null],"10987edf-0d65-4655-bdcc-74d83fa6a978":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f32c388b-2509-4cad-909d-d4f1aac2c7a9.__action_status__.code","label":"3 - Look Up Records➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"1884de52-0d46-448a-8b6c-404ca8869762":["condition"]},"attributes":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.__action_status__.code","label":"2 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"2ab0c8fd-9415-4b3b-8520-7bd8363734c0":["condition"]},"attributes":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record","label":"2 - Look Up Record➛Training Schedule Record","reference":"x_1593191_cooknow_training_schedule","reference_display":"Training Schedule Record","type":"reference","base_type":"reference","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.training_date","label":"2 - Look Up Record➛Training Schedule Record➛Training and Date","reference":"","reference_display":"Training and Date","type":"string","base_type":"string","parent_table_name":"x_1593191_cooknow_training_schedule","column_name":"training_date","usedInstances":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.instructor.email","label":"2 - Look Up Record➛Training Schedule Record➛Instructor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":["ah_to"]}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.date","label":"2 - Look Up Record➛Training Schedule Record➛Date","reference":"","reference_display":"Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1593191_cooknow_training_schedule","column_name":"date","usedInstances":{"629254f5-ba23-4d59-9d1c-1c2ae3e300a3":["conditions"],"f32c388b-2509-4cad-909d-d4f1aac2c7a9":["conditions"]}},{"name":"f32c388b-2509-4cad-909d-d4f1aac2c7a9.Table","label":"3 - Look Up Records➛Registration Table","reference":"x_1593191_cooknow_registration","reference_display":"Registration Table","type":"table_name","base_type":"table_name","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.lista","label":"Flow Variables➛lista","type":"string","base_type":"string","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"9061f5fc-9289-41c3-b360-3118afa88adf"}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.training.name","label":"2 - Look Up Record➛Training Schedule Record➛Training➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1593191_cooknow_training","column_name":"name","usedInstances":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.training","label":"2 - Look Up Record➛Training Schedule Record➛Training","reference":"x_1593191_cooknow_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_1593191_cooknow_training_schedule","column_name":"training","usedInstances":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Copy of Report Intructor 3</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>29167d73c3df52101f5afb377d013118</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Copy of Report Intructor 3</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name>sys_hub_flow_29167d73c3df52101f5afb377d013118</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=29167d73c3df52101f5afb377d013118"/>
+    <sys_variable_value action="DELETE" query="document_key=29167d73c3df52101f5afb377d013118"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=29167d73c3df52101f5afb377d013118"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=29167d73c3df52101f5afb377d013118^sys_idNOT IN69167d73c3df52101f5afb377d013119"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>29167d73c3df52101f5afb377d013118</id>
+        <name>Copy of Report Intructor 3</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>69167d73c3df52101f5afb377d013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:02</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=69167d73c3df52101f5afb377d013119"/>
+    <sys_hub_flow_input action="DELETE" query="model=29167d73c3df52101f5afb377d013118"/>
+    <sys_hub_flow_output action="DELETE" query="model=29167d73c3df52101f5afb377d013118"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=29167d73c3df52101f5afb377d013118"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=29167d73c3df52101f5afb377d013118^sys_idNOT INed167d73c3df52101f5afb377d013143"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>ed167d73c3df52101f5afb377d013143</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:02</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21SwWrcMBD9laLzxsi7aZv6VigLObSBJuQSghlL492BsaTK8iZuyL93ZKtLG2J0mTfz3rw3+OFFMXTIqlF3NKDaKHIJowO+mwMKemCy2Ka1N4CzkHycVZPihBvlo8WomlrrjToBT3g7j9dWaDLsYMgChbp0pay/fNYXupb3QV81WsuTrjkS24hONQ+PGxUgCjdl5Zc3LcriO7CXaI02u618Wm+vLuvu066rt3YHiB9F8E2o/72kd6L9mwSfEzqLsqoHHvGd3BHB3jiezxNHOdsae4DnkX5jkYrYo5g3uDbPZWtpDAzzCpujJ4M3IZF3K5Kg48IxnqfB/VgTSG2xh4nTfTmoINMoehiy5+yiWOpvj/7p59+Fe3JLwNJkb4DPFaQUqZsSjvniyDiIUDtACOQObYj+RAtZvAzVcraqZ/8kS0c6uApMNl7JiaDaC/5tge8hUk7xXWSE/Lqkb39Nee+aozhu19AyUI6yJ+TyE40mUkhfZcEJi93Xxz9NyAA7tQIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=29167d73c3df52101f5afb377d013118^sys_idNOT IN29167d73c3df52101f5afb377d013143,61167d73c3df52101f5afb377d013141,61167d73c3df52101f5afb377d013142"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>1884de52-0d46-448a-8b6c-404ca8869762</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>29167d73c3df52101f5afb377d013143</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:17:18</sys_updated_on>
+        <ui_id>da95b0e5-fea8-4392-a8f7-0a1448b75e39</ui_id>
+        <values>H4sIAAAAAAAA/+1Y3W7bNhR+FULXlitblhylV12zYAXWFmiM7qIpBIqkYq40qYlUEy8wsPs9woA93J5kh/qxrDj+qZMGGeYrQyTP4XfO+b5D0p9uHU6dU2dET7wwSUd47PlD3/NOhlGU+FHqnYwjb0Co03MknjFYmTOicvv9FYvCDtzejmmSBqPxwB2P/MAdERK5OAiYOwqHgyRKhuNoMOp/KO0WC7CkXGcCzz/WDmCETLmgOZPO6afPPSfDOexlWO6c3t6ZMvOMxQInTIDhmSLFjEmD3pyBj33jaKwnOL9iBn1o4rkbn90Kvmm9ScztIExZWF7PYTeGScpg0xQLzXrODEuKjcrny5GcYfpeinZgyqUBl6+0VoRjwzQyU4bYDHOBrrmZIoyq7fuO9Xej+e8AwR9aVymDJBCLiEvCKSByVobjOqcw/aadJlPFCXufGa5klWiDE9HkXIliJt9VUduqsBQXwqxUpdDgl2U2TIvb5AXEkF5M1fWHZt9zLsuE1AEKRbBYfmFjcp4UEGdZSMFw3vqLS0jWJ+zEBCtzPMNZxuVVnOXqKy8dA8xZ/0rARz8V6hrsNb+SfUxsTH1IOO6fw/hZOfwR59wG+BbcgPGiTFD8W2ExVSF2N7dr47LusFSTnGfmFTj+yuoQFr1aHoNoG63oqKXPis9WIjfxIIj8QTSIiVJfJIRhcsyljVSTKaOFYOuymNRL0EW75DCdTCwm9K7CtG88HeMN8dUS6YzVChk8SCETkIWp9FkJApkaxlIVJ15XFRvU8OgqqIEeLIPvQ3Woq44rBtexlZvvlMAu4nthmCRhEoz9ligRSek4SUM8Jn5LjGvoZ/kM51/isp+tsH+wzu1a9gfSGYxfnJfh9fZG2RhDdxQFZeiXBu62CGp+J0pB75ItuYcPInfFRGQUgtqJOTT95c52sD0SzBQbxDXSUK4+mijEa/ArFj00VwWaFdrAMgMzHdl0zpHRkyimLm09enZv3f8TknqodILtPRa3xMPT2KhDb1R9LjWklQD1+iVtFgu0LrjHcHmYWi+gUvKqUeoeSVnKXK1nqBakbnzWevS367G6uKzJceUo8Y6HSecwoUzwGS+LW2n2oWKgW+vOvE6pCVkRwyO+F7pU3ANSY/j69Tq+DVQcHXY0HLn4dFwcbH0jsrBT6+RpyLgHpsbwhztsTLbRMTjS8bnTMdheetIpti6SXxkxK5T8UeZKCEbhcgi3R4rnl4XnDccaEVXk+p535W6DRznod0e1NFzGdF+cG4gdHo/853TZxVvLnQ67HUvR+QqDLf98kiGL0DVczmeE5UqZBNLwpZykl85ltYzZTOtTVNnoDEtEBNa6WWZ9xMBYCzzjQlw6SJu5YMv5qrCnQH7BJXsJ80RJ4JFhlJdlbVaW8cF0icq6KuE2s7e3KbV/4kidqnx2SqIwYv4wgMs1TtzRIAndk5BiFyeBN/THQeSf0MWiiWE7eNgKIUwIy4xut4jTQpaF1IAJgFrC3DSG3rMLo9zKrTGVvxjSne8ytVZ6n0WuAfU3YRl4nxueuZw2S8r3Qjk4UdndZTWqZq3VBGrkoEtmDcMr8xIJrg3eCwysy02zsuuvsnthDfdwhPNcXe+f37KDugTobr7VqLPTP3//tQHn7oENkUDzaLxXeTzUPzQ+oyRqa7suiTjFBFMW70Nfq5RVsBu9IalW1Gf/qeGM7spy1VXcqlO6HJh2j8X9DUmqsh3VBfnjz70TViXo25K6PpBVX+vXhbo7f6fu+zgN8dn0o2OvOPaK/1OvOOyl8NPk7c/NO2GPi+Py4VtdG9fukfULYWpmon0fjB/48A2DwA+PL4TVl292TYc0V1lWx/ag1+/nfwF6lwWCeiAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>2ab0c8fd-9415-4b3b-8520-7bd8363734c0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>61167d73c3df52101f5afb377d013141</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:17:18</sys_updated_on>
+        <ui_id>7dbf5471-7435-4cc9-a55e-4621b9b27914</ui_id>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUFPXcDxSpZtWXlq0cBAgTYGmmxfsgFBiZTNliZVinLiBPn3DkVJdnyP46LpI4dzOTNzZkz55tFlxD13SeRFaRT1BqHnBYHn9ftBgv04DvpJ7MW467ZcgacUNDWOOYXjDPPCnO+R34sCP/JRIuUPIe+QVpgJJsYoTyaUFKU2YXnG8fxbZXRdqThXC5VkwjhRVLjnN7ctN8MK4mmq3PPHlSs9zyjiOKbceDJwnEuDrXVwKs+M11MzAeojEta1VMRg8VouvddUEAqhUsxz2nKnWBCspZo3EkUxGQm+EEyY0ODRNcr3OXsA9wPP6KUU0kqovWuOqCqXFScTyRI6yjSTwkosUHspeTEVlzYBU2ia4oLrutAgKXLwRzOD2YCoEKVXE3n3tQ44ZKJMr7rkMsG8OWGtFYsLTXPTC8rpFByhKc4y0+RMyRkrjQHLtD3mcGinHHhAaM7Goo0TA7wNJcLtIcgvSvE3rJjJ4gu4AWMAxDh0G9mi57JQZVVmKOFFXl4oLHLry30qa4V+FgalzbrKD9kSgUKeKJbpD2Awo1UqT62a7b2dFIkWlEikIMzEzJcoD6nQ0eW1JHj+/jueYRvqfJy3YzpmwhB7lJbX7/5ZUQCUzdX6WJzO8XHD9HE520MrtdF4U/mqsXomq8bKP9lYdT3vDw2WVsXbm6t9k2IT3jMuPtlJArLody6VRrZyS/OyTvSjGTpklJNn6/4AcLXxyJDNiefb8FYETU2Mlb3f+ev3/pukJwAiyNabCc5E+bMLQE/D295OasT+Cg/K9i9YW8pgw66zFztaOg/Hb9myrzV/DwBZG14BIufaotwAvN6vtfuKusHJqBt0XkZdIM7NY4O+qdqGAtevK9O6Wv/B6ONVfWDXkoH/dNtQ/+NxMf2XxuyYmCuzGbxoOJeZZW8uthDsxG+3LcPW+p3TPQHTKh6yw4ruGBlTvYheaxGp7zD/sem+YlczQ2V6r34H+js/FeKldyBL0RT6xDJ4nCqaABVyhBVFqSwEQdWzdEEb07eUqVxXyus75CvVhRKOhJFz9IQ6pbbTaJ9isxyQXW34KXXq9CoMuQPpOWV6TpPey4qxZR91T/jWe80+GmLGy9LD50W21DuqlFRbdtKeru1o/4EL60BQ/klBvX6jbeL7xs22B+tf8a362q2TUBx3O7gfBr7veb5HQm8Qhv6gH6d9HHbTxaAhlIsE1iJ4ToEY4B7VRKi76q2vFrsbj/5DBXbuv8PKxaF4a+MLKf4vPK8TascAhj47NeD9KVX7IpaSUywW9Oz9sYXxVv5zKdj1am2s6POmpv2uH/OC/SfYz4J+MqQYUK8z8ElyNgj98Kybkv5ZRHDvDEdxLwwITbrp8b/Pt78A+cUAvJcUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2ab0c8fd-9415-4b3b-8520-7bd8363734c0</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>61167d73c3df52101f5afb377d013142</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:17:18</sys_updated_on>
+        <ui_id>f32c388b-2509-4cad-909d-d4f1aac2c7a9</ui_id>
+        <values>H4sIAAAAAAAA/9VX227iMBD9FZRnQAlJoPRt1arSPrRItOpLVVmO44BVY2cdh0sR/77jOAnXtpRld9vHjOdyZnzOYJ6WDoudS+ciCVwXe+FFz3V933W7XZ9gL4r8LoncKIicpiPwhIKnxhGn8DnFPDffc+SFfd/re4hI+SLkDCk6YplWWDMpwDFmWcrx4rH0H26fkjHjsaLCuXx6bjopVlBFU+VcLneO9CKliOOIckjyYEA07gyi5tENbAXvN2QKVJ9I2NRSxQaL23ToXFMRUyiVYJ7RpjPBIsZaqkVtURTHA8HXhjETGjI6xnmesVdIf+Eav4RCW4Tas/oTlZOyZjKWjNBBWsypsFig9lDyfCLubANmxjTBOdfVjMGSZ5CPpgazAVEiSu7HcjasCt4wUbRXHnJJMK+/sNaKRbmmmbkLyukEEqEJTlMmRihVcsqKYMAyaY84fLQTDrcf04yNRBsTA7wNI8LtG7BfF+ZHrJjp4hbSQDAAYhxuG9mhZzJXxVSmiPA8Kw4UFpnN5ayKWaFfuUFpuy77Q3ZE4JARxVL9AwKmtGxl1TyK46G7pgSRImamZrZBdIDCBPRueqKDu+WyF0dJGPS8Vi/ww1ZASL+Fw5C2gm7Hi/pRp9f3gvaQEiBREbNa7avhPElPE9HVZpfHTuhg8KGxlXLaspVy8s4mJ4D7nwSlVf719PSRQmzDH8iE9N4lQbi+70wqjezkNnSyT/KTGXrDKI+31vwR4KrggSFbI1q8hbckaGJq7Oz7zrff91+SngAoRnbeTHAm7ALM6Xl4676/vPo7PCiuf83awoYzss9e3NCy8Xr6li3uteLvESCrwHtA1HiwKA8Ar/Zrlb6krn826vqdz1EXiPO0rNHXUzsw4OpVZa6u8n81/njXH9i1EeCtnmvqX51W0/tszY6puaNN/1Pi3GSWPbl+g2BnfrO9Ibbm31T3GELLesiKFc1YPKJ6Xb3yiqWeYf5y6LxkV62hor0/fv8F72qv6611BhqAfzEZXNXmA9CDx8b+evCa1nzadvgpNB0VwzsWYhV5i+eNYY3xIPByRbC6Rsnp4Izvr3/x81YN/qB6qvl/iz88p1L4+TeoyKx4qA8AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=29167d73c3df52101f5afb377d013118"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=29167d73c3df52101f5afb377d013118^sys_idNOT IN21167d73c3df52101f5afb377d01313e,25167d73c3df52101f5afb377d01313b,61167d73c3df52101f5afb377d013140,69167d73c3df52101f5afb377d01313c,8066f1b3c3df52101f5afb377d0131ca,e1167d73c3df52101f5afb377d01313f"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">3663f6a7c31352101f5afb377d013112</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>2ab0c8fd-9415-4b3b-8520-7bd8363734c0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>21167d73c3df52101f5afb377d01313e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <ui_id>1884de52-0d46-448a-8b6c-404ca8869762</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9KyjPaeQkTVn6NoEmIQGT2LQXmKwb22ktHDvYTrtS9b9znY+2Yp1AaI+8xce5955zck/2kel823l3b66dkysdLb8+xpHUAcPnfaShEdEyYkZz6aXRtAfiaAOqCxf4yKVrFeweTghbS8WtGLu1YLHGCxst979d+V0rqIJKKCy881bqFZZLjqeaQJ2WLGV5tsgzQrKreVot8irNeA4CcnxvKnw3kXvzsUfiF1mHeYi7aZKxPNBKSRyJJy80Fzi6BuVEHDWgOXhjd0fECuC3Wp2AtdR+UNzAk5M/sXdWFOHFWqBGNtpxPNLRqsklI5m4bQPBAfFQqclCo7pGfx50BJNFDZ3yZyZ3DvuJNpAOLEZK9d3abL9MA2+k7gWOl8owUMcTeLSh6rxw4cMIJRpsRBtoWzSHttZsZF+MXJpkpfCQ1MpscWjYlARYIJ6gR5DcIP6+hx/AyqDiE7bB4oFmBU4y2m8VtvMWJRx6W+iPLhAaBI5S6OAGvuCYla2/xjkbMbI+xM9X8mwb9/s6z1h+dVXNsoKUszkDPitJyWd8XqcALGNvoUwoHchT58F3jtKEGS4Oh28dITknz3f61fq+RjJKKOoiJcXlZMwXl5JxIRMvxyH7QxzCB/zLNBBC/sfhPA7S0WGtR2398H9Ow2NY/WGCG/aGCyYdErkP2IfpPx4udrgAkp1DW2O/Bwkn7PALqhnMaBEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">9fdafaefc31352101f5afb377d0131c7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>2ab0c8fd-9415-4b3b-8520-7bd8363734c0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>25167d73c3df52101f5afb377d01313b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <ui_id>10987edf-0d65-4655-bdcc-74d83fa6a978</ui_id>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj+yLM6twFCgh65AV/QyFAYt0YlQWdIkOaln+L+PipVs6HEnm4/k43siJ2aGYIfgX8yd9/Kg2f7n24pJHTH6n5iGHtmeyYC9Zyt2AjXEeJq6quTVbteuyy95vd5wEOs6r8VabLoCgJf8K9TZM3LjhJ9nahXSWwXj6/8z8KNUwmESacGRtoCO7adPqTBabBS0qGhQYqB+KSgsatHVRV7zqtxWZZ6Xu03Rbqu2KEUFKLZUd+18SKY/vUFkp9DdeOkTVZT5iuFHQC2QBnWgPK5YD1pAMG5k++AGAhyCeNJqvFUcpQ5Ex2Lth5e/ibvI81jYITniuCRvYZMecoH50UiOTzZIoxckQKtSDzdq6PX3RX5cAXYwqHBdASGDJz60UXNUkSR1P47m/HwdeC/1xV9KKsNB3SIIwcl2COjjGlBhT0RND9ZKfWisMyd5aSYtfXZQFGSdMmcaGs8tAx6FZ/REkN0T/u0Cv4KT0cUj0VDzfHHf/Bri3MVHUtwspqnAcydtuCO6EyZx81u814XJL4chkEtPA18i9nC98pgYacmS/wudjXuPUv9i8x9APHmkLwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">ba63f6a7c31352101f5afb377d013115</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>2beee53d-e12f-48c6-9474-147eb413a596</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>61167d73c3df52101f5afb377d013140</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <ui_id>4a07f753-4696-4a3f-95fe-cc5e4a7ccdf7</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">1bdafaefc31352101f5afb377d0131c9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <flow_variables_assigned>variable,lista</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>10987edf-0d65-4655-bdcc-74d83fa6a978</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>69167d73c3df52101f5afb377d01313c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <ui_id>65213b4a-47d4-4c66-b259-54d2ea4bbda1</ui_id>
+        <values>H4sIAAAAAAAA/+1X22rcMBD9laDXro0ve02fAiUQaBto0r50g9FKo6yoLDmylGS7+N878mWzbEpoIQ+97Jt8RqOZOTOHwVtivKu8q6/NWV3LW01Ov96MiNQBw/OWaFoCOSX31Eq6UkBGeFQ+QHjksq4U3Xx5QthaKm6hf6eiFt0dWHK6PTC5TQWFoitQ6HjlrNS36C45fk3TdDrjs5zlXEyyNEnFhIpVPpvxJM3TPMF7g+NeWs8TDSEQqYfHjeUhk2RE4NGB5oDBBFU1jEhJNafO2M0OsUD5pVZPwFpq19VY0sdafsen50mShJsCsCzWM7D7LHp2BmKMZHBZOWl0h7g2zc5olC/1x66CwCsI6pXb49XX+B5UIeuQRp+TuFqbh09DwHOp2wJ7ozKMqt0XdUjDyjuoQy+8vD4gp0PeHzYEFJQYsShpVSFSVNbcyzYKJl3Gtwo/YqHMA2YX5iemLFQYI5s0Pkf8XQt/6bvyAZ9B5xDus5Z3Hi5Cw2HMWDpJxtEEex6Np4ssoixdRBPGs8U0TzOecdK01BZ3PhTVkdTTUXSM4oWaWVm5M0zhHotz1sOAhaJ3o4Hnl25iHOetPhG8aMsoPIYRUgMvCmFsAZStY+mgjA1mgOhqE4fpe0uaphntJKNk7eieXrbblqchi3g4NM1zJb1491U0NnlJYxnb09hQx0FZR3X9JepaJFPsrmDRIpsvonGKElvl0yTK03ROBZ3PKRevoK5uLn5TWsOUx633yZvnhmHy0bYky6VeklZmN6OdnLs91U71T9fAcV8dFfV/7avxr+2pA8kc99VRXX+Cuv7VfcWByRrZuA7mi+EPKxg2OKqS7UMPxn4LTz5hzQ9+QZUGqw0AAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">4466f1b3c3df52101f5afb377d0131c9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:17:18</sys_created_on>
+        <sys_id>8066f1b3c3df52101f5afb377d0131ca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <ui_id>2ab0c8fd-9415-4b3b-8520-7bd8363734c0</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWdDTin0LWgQo0DZAE+TSBsSKpGyiFKmSlB3X8L93qYdtJDFaFDlWJ3HI3Z0ZDbUPdOfaztl7fW2tWKlg+e0xDITyGL7vAwUND5YB1YoJJ7QiPRAGG5Cd38BXJmwrYfdwQuhaSGb42K0FgzWOm2C5f7bldi0nEiousfDOGaFWWC4YrioGKa3ivMziLMnieJ6kNC2zGp85lEWM56bC9xO5d596JLzI2s9D3E6TtGGeVhLHYcCfHFeM4+wapOVh0IBi4LTZHRHDgd0qeQLWQrlBcgNPVvzC5mlR+IM1R5F09OO4JKNXk01aUH7beoYD4qCSk4dado36MgjxLvMaOunOXO4s9uOtJ+1ZjJTqu7Xefp0G3gjVKxw3paYgjytw6EPVOW79l+GSN9iINNC26A5pjd6Ivhi5NNFK4iKqpd7iUB+VCKgnHqFHEN0g/qGHH8AIr+IztsHiQ6+e/Oz83EHHyJgMovGApUa07hrbbfhI7hC+jN5Z6vb7klV1kZfJrMyzYpZTuphBUfBZPk+TalGl5SLJI0IGjsQ6cJ0lJKKa8cPhexfHGUteZvfN+r7FDWBlkl3Vl27AFX3tBryS/cuxT/8Ue2e6v0197Hv9j/0Ue/yElgy5HrX1w//5Ojz67A8T7BAcxqmwSOTeYx+nH7bf2GECBD2Httr88BJO2OE3ANi2ofoFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">b263f6a7c31352101f5afb377d013115</block>
+        <comment/>
+        <connected_to>1884de52-0d46-448a-8b6c-404ca8869762</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>2ab0c8fd-9415-4b3b-8520-7bd8363734c0</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>e1167d73c3df52101f5afb377d01313f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <ui_id>2beee53d-e12f-48c6-9474-147eb413a596</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=29167d73c3df52101f5afb377d013118^sys_idNOT IN21167d73c3df52101f5afb377d013146,25167d73c3df52101f5afb377d013146,29167d73c3df52101f5afb377d013146,a1167d73c3df52101f5afb377d013146,a5167d73c3df52101f5afb377d013146,a9167d73c3df52101f5afb377d013146,ad167d73c3df52101f5afb377d013145"/>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.variable}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:03</sys_created_on>
+        <sys_id>21167d73c3df52101f5afb377d013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a25440e0-46dc-4db1-bbbf-c6ff8e4c9384</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.lista}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:03</sys_created_on>
+        <sys_id>25167d73c3df52101f5afb377d013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c969e325-74ab-41b6-86da-ab502375938d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f32c388b-2509-4cad-909d-d4f1aac2c7a9.Records}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:03</sys_created_on>
+        <sys_id>29167d73c3df52101f5afb377d013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>a166ae8d-2c8a-4693-bf09-dd5180ef20cc</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f32c388b-2509-4cad-909d-d4f1aac2c7a9.Table}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:03</sys_created_on>
+        <sys_id>a1167d73c3df52101f5afb377d013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2eb853fd-47c4-4615-a63e-cd33ea33949c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{629254f5-ba23-4d59-9d1c-1c2ae3e300a3.Record.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:03</sys_created_on>
+        <sys_id>a5167d73c3df52101f5afb377d013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0b38ac3d-2bcf-4c0c-ae1a-a75f3127b5d1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.lista}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:03</sys_created_on>
+        <sys_id>a9167d73c3df52101f5afb377d013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:03</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>745256ed-39e5-40b2-8a29-16505382f496</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>29167d73c3df52101f5afb377d013118</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{629254f5-ba23-4d59-9d1c-1c2ae3e300a3.Record.opened_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>ad167d73c3df52101f5afb377d013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>244d6cdb-b6be-4738-b5eb-9ebfff160abf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="DELETE" query="model=29167d73c3df52101f5afb377d013118^sys_idNOT IN61167d73c3df52101f5afb377d013130,65167d73c3df52101f5afb377d01312c"/>
+    <sys_hub_flow_variable action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e4cc1504-53c3-4692-ac19-5cd296312d2d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</model>
+        <model_id>29167d73c3df52101f5afb377d013118</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_29167d73c3df52101f5afb377d013118</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>61167d73c3df52101f5afb377d013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9061f5fc-9289-41c3-b360-3118afa88adf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>lista</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>lista</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy of Report Intructor 3">29167d73c3df52101f5afb377d013118</model>
+        <model_id>29167d73c3df52101f5afb377d013118</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_29167d73c3df52101f5afb377d013118</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:16:02</sys_created_on>
+        <sys_id>65167d73c3df52101f5afb377d01312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:16:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_29167d73c3df52101f5afb377d013118"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_29167d73c3df52101f5afb377d013118"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_29167d73c3df52101f5afb377d013118"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_29167d73c3df52101f5afb377d013118"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=29167d73c3df52101f5afb377d013118"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=29167d73c3df52101f5afb377d013118"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CookNow">37601eaec3539e101f5afb377d013106</application>
+        <file_path/>
+        <instance_id>b49b406edb92f9d04162684e1396196b</instance_id>
+        <instance_name>dev206495</instance_name>
+        <name>sys_hub_flow_29167d73c3df52101f5afb377d013118</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3546000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from&gt;c7620f6bc35352101f5afb377d01317e&lt;/copied_from&gt;&lt;copied_from_name&gt;Report Intructor&lt;/copied_from_name&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;copy_of_report_intructor_3&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.instructor.name","label":"2 - Look Up Record➛Training Schedule Record➛Instructor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{}},{"name":"flow_variable.variable","label":"Flow Variables➛variable","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null],"65213b4a-47d4-4c66-b259-54d2ea4bbda1":["lista-1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e4cc1504-53c3-4692-ac19-5cd296312d2d"}},{"name":"f32c388b-2509-4cad-909d-d4f1aac2c7a9.Records","label":"3 - Look Up Records➛Registration Records","reference":"x_1593191_cooknow_registration","reference_display":"Registration","type":"records","base_type":"records","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null],"10987edf-0d65-4655-bdcc-74d83fa6a978":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f32c388b-2509-4cad-909d-d4f1aac2c7a9.__action_status__.code","label":"3 - Look Up Records➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"1884de52-0d46-448a-8b6c-404ca8869762":["condition"]},"attributes":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.__action_status__.code","label":"2 - Look Up Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"2ab0c8fd-9415-4b3b-8520-7bd8363734c0":["condition"]},"attributes":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record","label":"2 - Look Up Record➛Training Schedule Record","reference":"x_1593191_cooknow_training_schedule","reference_display":"Training Schedule Record","type":"reference","base_type":"reference","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.training_date","label":"2 - Look Up Record➛Training Schedule Record➛Training and Date","reference":"","reference_display":"Training and Date","type":"string","base_type":"string","parent_table_name":"x_1593191_cooknow_training_schedule","column_name":"training_date","usedInstances":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.instructor.email","label":"2 - Look Up Record➛Training Schedule Record➛Instructor➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":["ah_to"]}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.date","label":"2 - Look Up Record➛Training Schedule Record➛Date","reference":"","reference_display":"Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1593191_cooknow_training_schedule","column_name":"date","usedInstances":{"629254f5-ba23-4d59-9d1c-1c2ae3e300a3":["conditions"],"f32c388b-2509-4cad-909d-d4f1aac2c7a9":["conditions"]}},{"name":"f32c388b-2509-4cad-909d-d4f1aac2c7a9.Table","label":"3 - Look Up Records➛Registration Table","reference":"x_1593191_cooknow_registration","reference_display":"Registration Table","type":"table_name","base_type":"table_name","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.lista","label":"Flow Variables➛lista","type":"string","base_type":"string","usedInstances":{"da95b0e5-fea8-4392-a8f7-0a1448b75e39":[null]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"9061f5fc-9289-41c3-b360-3118afa88adf"}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.training.name","label":"2 - Look Up Record➛Training Schedule Record➛Training➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_1593191_cooknow_training","column_name":"name","usedInstances":{}},{"name":"7dbf5471-7435-4cc9-a55e-4621b9b27914.Record.training","label":"2 - Look Up Record➛Training Schedule Record➛Training","reference":"x_1593191_cooknow_training","reference_display":"Training","type":"reference","base_type":"reference","parent_table_name":"x_1593191_cooknow_training_schedule","column_name":"training","usedInstances":{}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Copy of Report Intructor 3&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;29167d73c3df52101f5afb377d013118&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of Report Intructor 3&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CookNow" source="x_1593191_cooknow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_29167d73c3df52101f5afb377d013118&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=29167d73c3df52101f5afb377d013118^sys_idNOT IN69167d73c3df52101f5afb377d013119"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;29167d73c3df52101f5afb377d013118&lt;/id&gt;&lt;name&gt;Copy of Report Intructor 3&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;69167d73c3df52101f5afb377d013119&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:02&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=69167d73c3df52101f5afb377d013119"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=29167d73c3df52101f5afb377d013118^sys_idNOT INed167d73c3df52101f5afb377d013143"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;name&gt;Daily&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;ed167d73c3df52101f5afb377d013143&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:02&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Daily"&gt;89142dc0c32222002841b63b12d3ae8a&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/21SwWrcMBD9laLzxsi7aZv6VigLObSBJuQSghlL492BsaTK8iZuyL93ZKtLG2J0mTfz3rw3+OFFMXTIqlF3NKDaKHIJowO+mwMKemCy2Ka1N4CzkHycVZPihBvlo8WomlrrjToBT3g7j9dWaDLsYMgChbp0pay/fNYXupb3QV81WsuTrjkS24hONQ+PGxUgCjdl5Zc3LcriO7CXaI02u618Wm+vLuvu066rt3YHiB9F8E2o/72kd6L9mwSfEzqLsqoHHvGd3BHB3jiezxNHOdsae4DnkX5jkYrYo5g3uDbPZWtpDAzzCpujJ4M3IZF3K5Kg48IxnqfB/VgTSG2xh4nTfTmoINMoehiy5+yiWOpvj/7p59+Fe3JLwNJkb4DPFaQUqZsSjvniyDiIUDtACOQObYj+RAtZvAzVcraqZ/8kS0c6uApMNl7JiaDaC/5tge8hUk7xXWSE/Lqkb39Nee+aozhu19AyUI6yJ+TyE40mUkhfZcEJi93Xxz9NyAA7tQIAAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;daily&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=29167d73c3df52101f5afb377d013118^sys_idNOT IN29167d73c3df52101f5afb377d013143,61167d73c3df52101f5afb377d013141,61167d73c3df52101f5afb377d013142"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id&gt;1884de52-0d46-448a-8b6c-404ca8869762&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;29167d73c3df52101f5afb377d013143&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:17:18&lt;/sys_updated_on&gt;&lt;ui_id&gt;da95b0e5-fea8-4392-a8f7-0a1448b75e39&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Y3W7bNhR+FULXlitblhylV12zYAXWFmiM7qIpBIqkYq40qYlUEy8wsPs9woA93J5kh/qxrDj+qZMGGeYrQyTP4XfO+b5D0p9uHU6dU2dET7wwSUd47PlD3/NOhlGU+FHqnYwjb0Co03MknjFYmTOicvv9FYvCDtzejmmSBqPxwB2P/MAdERK5OAiYOwqHgyRKhuNoMOp/KO0WC7CkXGcCzz/WDmCETLmgOZPO6afPPSfDOexlWO6c3t6ZMvOMxQInTIDhmSLFjEmD3pyBj33jaKwnOL9iBn1o4rkbn90Kvmm9ScztIExZWF7PYTeGScpg0xQLzXrODEuKjcrny5GcYfpeinZgyqUBl6+0VoRjwzQyU4bYDHOBrrmZIoyq7fuO9Xej+e8AwR9aVymDJBCLiEvCKSByVobjOqcw/aadJlPFCXufGa5klWiDE9HkXIliJt9VUduqsBQXwqxUpdDgl2U2TIvb5AXEkF5M1fWHZt9zLsuE1AEKRbBYfmFjcp4UEGdZSMFw3vqLS0jWJ+zEBCtzPMNZxuVVnOXqKy8dA8xZ/0rARz8V6hrsNb+SfUxsTH1IOO6fw/hZOfwR59wG+BbcgPGiTFD8W2ExVSF2N7dr47LusFSTnGfmFTj+yuoQFr1aHoNoG63oqKXPis9WIjfxIIj8QTSIiVJfJIRhcsyljVSTKaOFYOuymNRL0EW75DCdTCwm9K7CtG88HeMN8dUS6YzVChk8SCETkIWp9FkJApkaxlIVJ15XFRvU8OgqqIEeLIPvQ3Woq44rBtexlZvvlMAu4nthmCRhEoz9ligRSek4SUM8Jn5LjGvoZ/kM51/isp+tsH+wzu1a9gfSGYxfnJfh9fZG2RhDdxQFZeiXBu62CGp+J0pB75ItuYcPInfFRGQUgtqJOTT95c52sD0SzBQbxDXSUK4+mijEa/ArFj00VwWaFdrAMgMzHdl0zpHRkyimLm09enZv3f8TknqodILtPRa3xMPT2KhDb1R9LjWklQD1+iVtFgu0LrjHcHmYWi+gUvKqUeoeSVnKXK1nqBakbnzWevS367G6uKzJceUo8Y6HSecwoUzwGS+LW2n2oWKgW+vOvE6pCVkRwyO+F7pU3ANSY/j69Tq+DVQcHXY0HLn4dFwcbH0jsrBT6+RpyLgHpsbwhztsTLbRMTjS8bnTMdheetIpti6SXxkxK5T8UeZKCEbhcgi3R4rnl4XnDccaEVXk+p535W6DRznod0e1NFzGdF+cG4gdHo/853TZxVvLnQ67HUvR+QqDLf98kiGL0DVczmeE5UqZBNLwpZykl85ltYzZTOtTVNnoDEtEBNa6WWZ9xMBYCzzjQlw6SJu5YMv5qrCnQH7BJXsJ80RJ4JFhlJdlbVaW8cF0icq6KuE2s7e3KbV/4kidqnx2SqIwYv4wgMs1TtzRIAndk5BiFyeBN/THQeSf0MWiiWE7eNgKIUwIy4xut4jTQpaF1IAJgFrC3DSG3rMLo9zKrTGVvxjSne8ytVZ6n0WuAfU3YRl4nxueuZw2S8r3Qjk4UdndZTWqZq3VBGrkoEtmDcMr8xIJrg3eCwysy02zsuuvsnthDfdwhPNcXe+f37KDugTobr7VqLPTP3//tQHn7oENkUDzaLxXeTzUPzQ+oyRqa7suiTjFBFMW70Nfq5RVsBu9IalW1Gf/qeGM7spy1VXcqlO6HJh2j8X9DUmqsh3VBfnjz70TViXo25K6PpBVX+vXhbo7f6fu+zgN8dn0o2OvOPaK/1OvOOyl8NPk7c/NO2GPi+Py4VtdG9fukfULYWpmon0fjB/48A2DwA+PL4TVl292TYc0V1lWx/ag1+/nfwF6lwWCeiAAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Record"&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Record"&gt;b93f42810b30030085c083eb37673a63&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;9d09f99587003300663ca1bb36cb0ba3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;2ab0c8fd-9415-4b3b-8520-7bd8363734c0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;61167d73c3df52101f5afb377d013141&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:17:18&lt;/sys_updated_on&gt;&lt;ui_id&gt;7dbf5471-7435-4cc9-a55e-4621b9b27914&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/9VY227bOBD9FUFPXcDxSpZtWXlq0cBAgTYGmmxfsgFBiZTNliZVinLiBPn3DkVJdnyP46LpI4dzOTNzZkz55tFlxD13SeRFaRT1BqHnBYHn9ftBgv04DvpJ7MW467ZcgacUNDWOOYXjDPPCnO+R34sCP/JRIuUPIe+QVpgJJsYoTyaUFKU2YXnG8fxbZXRdqThXC5VkwjhRVLjnN7ctN8MK4mmq3PPHlSs9zyjiOKbceDJwnEuDrXVwKs+M11MzAeojEta1VMRg8VouvddUEAqhUsxz2nKnWBCspZo3EkUxGQm+EEyY0ODRNcr3OXsA9wPP6KUU0kqovWuOqCqXFScTyRI6yjSTwkosUHspeTEVlzYBU2ia4oLrutAgKXLwRzOD2YCoEKVXE3n3tQ44ZKJMr7rkMsG8OWGtFYsLTXPTC8rpFByhKc4y0+RMyRkrjQHLtD3mcGinHHhAaM7Goo0TA7wNJcLtIcgvSvE3rJjJ4gu4AWMAxDh0G9mi57JQZVVmKOFFXl4oLHLry30qa4V+FgalzbrKD9kSgUKeKJbpD2Awo1UqT62a7b2dFIkWlEikIMzEzJcoD6nQ0eW1JHj+/jueYRvqfJy3YzpmwhB7lJbX7/5ZUQCUzdX6WJzO8XHD9HE520MrtdF4U/mqsXomq8bKP9lYdT3vDw2WVsXbm6t9k2IT3jMuPtlJArLody6VRrZyS/OyTvSjGTpklJNn6/4AcLXxyJDNiefb8FYETU2Mlb3f+ev3/pukJwAiyNabCc5E+bMLQE/D295OasT+Cg/K9i9YW8pgw66zFztaOg/Hb9myrzV/DwBZG14BIufaotwAvN6vtfuKusHJqBt0XkZdIM7NY4O+qdqGAtevK9O6Wv/B6ONVfWDXkoH/dNtQ/+NxMf2XxuyYmCuzGbxoOJeZZW8uthDsxG+3LcPW+p3TPQHTKh6yw4ruGBlTvYheaxGp7zD/sem+YlczQ2V6r34H+js/FeKldyBL0RT6xDJ4nCqaABVyhBVFqSwEQdWzdEEb07eUqVxXyus75CvVhRKOhJFz9IQ6pbbTaJ9isxyQXW34KXXq9CoMuQPpOWV6TpPey4qxZR91T/jWe80+GmLGy9LD50W21DuqlFRbdtKeru1o/4EL60BQ/klBvX6jbeL7xs22B+tf8a362q2TUBx3O7gfBr7veb5HQm8Qhv6gH6d9HHbTxaAhlIsE1iJ4ToEY4B7VRKi76q2vFrsbj/5DBXbuv8PKxaF4a+MLKf4vPK8TascAhj47NeD9KVX7IpaSUywW9Oz9sYXxVv5zKdj1am2s6POmpv2uH/OC/SfYz4J+MqQYUK8z8ElyNgj98Kybkv5ZRHDvDEdxLwwITbrp8b/Pt78A+cUAvJcUAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;2ab0c8fd-9415-4b3b-8520-7bd8363734c0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;61167d73c3df52101f5afb377d013142&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:17:18&lt;/sys_updated_on&gt;&lt;ui_id&gt;f32c388b-2509-4cad-909d-d4f1aac2c7a9&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/9VX227iMBD9FZRnQAlJoPRt1arSPrRItOpLVVmO44BVY2cdh0sR/77jOAnXtpRld9vHjOdyZnzOYJ6WDoudS+ciCVwXe+FFz3V933W7XZ9gL4r8LoncKIicpiPwhIKnxhGn8DnFPDffc+SFfd/re4hI+SLkDCk6YplWWDMpwDFmWcrx4rH0H26fkjHjsaLCuXx6bjopVlBFU+VcLneO9CKliOOIckjyYEA07gyi5tENbAXvN2QKVJ9I2NRSxQaL23ToXFMRUyiVYJ7RpjPBIsZaqkVtURTHA8HXhjETGjI6xnmesVdIf+Eav4RCW4Tas/oTlZOyZjKWjNBBWsypsFig9lDyfCLubANmxjTBOdfVjMGSZ5CPpgazAVEiSu7HcjasCt4wUbRXHnJJMK+/sNaKRbmmmbkLyukEEqEJTlMmRihVcsqKYMAyaY84fLQTDrcf04yNRBsTA7wNI8LtG7BfF+ZHrJjp4hbSQDAAYhxuG9mhZzJXxVSmiPA8Kw4UFpnN5ayKWaFfuUFpuy77Q3ZE4JARxVL9AwKmtGxl1TyK46G7pgSRImamZrZBdIDCBPRueqKDu+WyF0dJGPS8Vi/ww1ZASL+Fw5C2gm7Hi/pRp9f3gvaQEiBREbNa7avhPElPE9HVZpfHTuhg8KGxlXLaspVy8s4mJ4D7nwSlVf719PSRQmzDH8iE9N4lQbi+70wqjezkNnSyT/KTGXrDKI+31vwR4KrggSFbI1q8hbckaGJq7Oz7zrff91+SngAoRnbeTHAm7ALM6Xl4676/vPo7PCiuf83awoYzss9e3NCy8Xr6li3uteLvESCrwHtA1HiwKA8Ar/Zrlb6krn826vqdz1EXiPO0rNHXUzsw4OpVZa6u8n81/njXH9i1EeCtnmvqX51W0/tszY6puaNN/1Pi3GSWPbl+g2BnfrO9Ibbm31T3GELLesiKFc1YPKJ6Xb3yiqWeYf5y6LxkV62hor0/fv8F72qv6611BhqAfzEZXNXmA9CDx8b+evCa1nzadvgpNB0VwzsWYhV5i+eNYY3xIPByRbC6Rsnp4Izvr3/x81YN/qB6qvl/iz88p1L4+TeoyKx4qA8AAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=29167d73c3df52101f5afb377d013118^sys_idNOT IN21167d73c3df52101f5afb377d01313e,25167d73c3df52101f5afb377d01313b,61167d73c3df52101f5afb377d013140,69167d73c3df52101f5afb377d01313c,8066f1b3c3df52101f5afb377d0131ca,e1167d73c3df52101f5afb377d01313f"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;3663f6a7c31352101f5afb377d013112&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;6&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;2ab0c8fd-9415-4b3b-8520-7bd8363734c0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;21167d73c3df52101f5afb377d01313e&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;1884de52-0d46-448a-8b6c-404ca8869762&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1UXW/TMBT9KyjPaeQkTVn6NoEmIQGT2LQXmKwb22ktHDvYTrtS9b9znY+2Yp1AaI+8xce5955zck/2kel823l3b66dkysdLb8+xpHUAcPnfaShEdEyYkZz6aXRtAfiaAOqCxf4yKVrFeweTghbS8WtGLu1YLHGCxst979d+V0rqIJKKCy881bqFZZLjqeaQJ2WLGV5tsgzQrKreVot8irNeA4CcnxvKnw3kXvzsUfiF1mHeYi7aZKxPNBKSRyJJy80Fzi6BuVEHDWgOXhjd0fECuC3Wp2AtdR+UNzAk5M/sXdWFOHFWqBGNtpxPNLRqsklI5m4bQPBAfFQqclCo7pGfx50BJNFDZ3yZyZ3DvuJNpAOLEZK9d3abL9MA2+k7gWOl8owUMcTeLSh6rxw4cMIJRpsRBtoWzSHttZsZF+MXJpkpfCQ1MpscWjYlARYIJ6gR5DcIP6+hx/AyqDiE7bB4oFmBU4y2m8VtvMWJRx6W+iPLhAaBI5S6OAGvuCYla2/xjkbMbI+xM9X8mwb9/s6z1h+dVXNsoKUszkDPitJyWd8XqcALGNvoUwoHchT58F3jtKEGS4Oh28dITknz3f61fq+RjJKKOoiJcXlZMwXl5JxIRMvxyH7QxzCB/zLNBBC/sfhPA7S0WGtR2398H9Ow2NY/WGCG/aGCyYdErkP2IfpPx4udrgAkp1DW2O/Bwkn7PALqhnMaBEGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;9fdafaefc31352101f5afb377d0131c7&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;2ab0c8fd-9415-4b3b-8520-7bd8363734c0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;25167d73c3df52101f5afb377d01313b&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;10987edf-0d65-4655-bdcc-74d83fa6a978&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/51STW/bMAz9Lzonhj+yLM6twFCgh65AV/QyFAYt0YlQWdIkOaln+L+PipVs6HEnm4/k43siJ2aGYIfgX8yd9/Kg2f7n24pJHTH6n5iGHtmeyYC9Zyt2AjXEeJq6quTVbteuyy95vd5wEOs6r8VabLoCgJf8K9TZM3LjhJ9nahXSWwXj6/8z8KNUwmESacGRtoCO7adPqTBabBS0qGhQYqB+KSgsatHVRV7zqtxWZZ6Xu03Rbqu2KEUFKLZUd+18SKY/vUFkp9DdeOkTVZT5iuFHQC2QBnWgPK5YD1pAMG5k++AGAhyCeNJqvFUcpQ5Ex2Lth5e/ibvI81jYITniuCRvYZMecoH50UiOTzZIoxckQKtSDzdq6PX3RX5cAXYwqHBdASGDJz60UXNUkSR1P47m/HwdeC/1xV9KKsNB3SIIwcl2COjjGlBhT0RND9ZKfWisMyd5aSYtfXZQFGSdMmcaGs8tAx6FZ/REkN0T/u0Cv4KT0cUj0VDzfHHf/Bri3MVHUtwspqnAcydtuCO6EyZx81u814XJL4chkEtPA18i9nC98pgYacmS/wudjXuPUv9i8x9APHmkLwMAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;ba63f6a7c31352101f5afb377d013115&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="End"&gt;d176605ea76103004f27b0d2187901c7&lt;/logic_definition&gt;&lt;order&gt;9&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;2beee53d-e12f-48c6-9474-147eb413a596&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;61167d73c3df52101f5afb377d013140&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;4a07f753-4696-4a3f-95fe-cc5e4a7ccdf7&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;1bdafaefc31352101f5afb377d0131c9&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;flow_variables_assigned&gt;variable,lista&lt;/flow_variables_assigned&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Set Flow Variables"&gt;4f787d1e0f9b0010ecf0cc52ff767ea0&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;10987edf-0d65-4655-bdcc-74d83fa6a978&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;69167d73c3df52101f5afb377d01313c&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;65213b4a-47d4-4c66-b259-54d2ea4bbda1&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1X22rcMBD9laDXro0ve02fAiUQaBto0r50g9FKo6yoLDmylGS7+N878mWzbEpoIQ+97Jt8RqOZOTOHwVtivKu8q6/NWV3LW01Ov96MiNQBw/OWaFoCOSX31Eq6UkBGeFQ+QHjksq4U3Xx5QthaKm6hf6eiFt0dWHK6PTC5TQWFoitQ6HjlrNS36C45fk3TdDrjs5zlXEyyNEnFhIpVPpvxJM3TPMF7g+NeWs8TDSEQqYfHjeUhk2RE4NGB5oDBBFU1jEhJNafO2M0OsUD5pVZPwFpq19VY0sdafsen50mShJsCsCzWM7D7LHp2BmKMZHBZOWl0h7g2zc5olC/1x66CwCsI6pXb49XX+B5UIeuQRp+TuFqbh09DwHOp2wJ7ozKMqt0XdUjDyjuoQy+8vD4gp0PeHzYEFJQYsShpVSFSVNbcyzYKJl3Gtwo/YqHMA2YX5iemLFQYI5s0Pkf8XQt/6bvyAZ9B5xDus5Z3Hi5Cw2HMWDpJxtEEex6Np4ssoixdRBPGs8U0TzOecdK01BZ3PhTVkdTTUXSM4oWaWVm5M0zhHotz1sOAhaJ3o4Hnl25iHOetPhG8aMsoPIYRUgMvCmFsAZStY+mgjA1mgOhqE4fpe0uaphntJKNk7eieXrbblqchi3g4NM1zJb1491U0NnlJYxnb09hQx0FZR3X9JepaJFPsrmDRIpsvonGKElvl0yTK03ROBZ3PKRevoK5uLn5TWsOUx633yZvnhmHy0bYky6VeklZmN6OdnLs91U71T9fAcV8dFfV/7avxr+2pA8kc99VRXX+Cuv7VfcWByRrZuA7mi+EPKxg2OKqS7UMPxn4LTz5hzQ9+QZUGqw0AAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;4466f1b3c3df52101f5afb377d0131c9&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Do the following until"&gt;eaeb040687210300e6c2c88fc0e3ec89&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:17:18&lt;/sys_created_on&gt;&lt;sys_id&gt;8066f1b3c3df52101f5afb377d0131ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;2ab0c8fd-9415-4b3b-8520-7bd8363734c0&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8lUJnWdDTin0LWgQo0DZAE+TSBsSKpGyiFKmSlB3X8L93qYdtJDFaFDlWJ3HI3Z0ZDbUPdOfaztl7fW2tWKlg+e0xDITyGL7vAwUND5YB1YoJJ7QiPRAGG5Cd38BXJmwrYfdwQuhaSGb42K0FgzWOm2C5f7bldi0nEiousfDOGaFWWC4YrioGKa3ivMziLMnieJ6kNC2zGp85lEWM56bC9xO5d596JLzI2s9D3E6TtGGeVhLHYcCfHFeM4+wapOVh0IBi4LTZHRHDgd0qeQLWQrlBcgNPVvzC5mlR+IM1R5F09OO4JKNXk01aUH7beoYD4qCSk4dado36MgjxLvMaOunOXO4s9uOtJ+1ZjJTqu7Xefp0G3gjVKxw3paYgjytw6EPVOW79l+GSN9iINNC26A5pjd6Ivhi5NNFK4iKqpd7iUB+VCKgnHqFHEN0g/qGHH8AIr+IztsHiQ6+e/Oz83EHHyJgMovGApUa07hrbbfhI7hC+jN5Z6vb7klV1kZfJrMyzYpZTuphBUfBZPk+TalGl5SLJI0IGjsQ6cJ0lJKKa8cPhexfHGUteZvfN+r7FDWBlkl3Vl27AFX3tBryS/cuxT/8Ue2e6v0197Hv9j/0Ue/yElgy5HrX1w//5Ojz67A8T7BAcxqmwSOTeYx+nH7bf2GECBD2Httr88BJO2OE3ANi2ofoFAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;b263f6a7c31352101f5afb377d013115&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;1884de52-0d46-448a-8b6c-404ca8869762&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;8&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;2ab0c8fd-9415-4b3b-8520-7bd8363734c0&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;e1167d73c3df52101f5afb377d01313f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:19:39&lt;/sys_updated_on&gt;&lt;ui_id&gt;2beee53d-e12f-48c6-9474-147eb413a596&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=29167d73c3df52101f5afb377d013118^sys_idNOT IN21167d73c3df52101f5afb377d013146,25167d73c3df52101f5afb377d013146,29167d73c3df52101f5afb377d013146,a1167d73c3df52101f5afb377d013146,a5167d73c3df52101f5afb377d013146,a9167d73c3df52101f5afb377d013146,ad167d73c3df52101f5afb377d013145"/&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{flow_variable.variable}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:03&lt;/sys_created_on&gt;&lt;sys_id&gt;21167d73c3df52101f5afb377d013146&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:03&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;a25440e0-46dc-4db1-bbbf-c6ff8e4c9384&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{flow_variable.lista}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:03&lt;/sys_created_on&gt;&lt;sys_id&gt;25167d73c3df52101f5afb377d013146&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:03&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;c969e325-74ab-41b6-86da-ab502375938d&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{f32c388b-2509-4cad-909d-d4f1aac2c7a9.Records}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:03&lt;/sys_created_on&gt;&lt;sys_id&gt;29167d73c3df52101f5afb377d013146&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:03&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;a166ae8d-2c8a-4693-bf09-dd5180ef20cc&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{f32c388b-2509-4cad-909d-d4f1aac2c7a9.Table}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:03&lt;/sys_created_on&gt;&lt;sys_id&gt;a1167d73c3df52101f5afb377d013146&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:03&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;2eb853fd-47c4-4615-a63e-cd33ea33949c&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{629254f5-ba23-4d59-9d1c-1c2ae3e300a3.Record.opened_by.name}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:03&lt;/sys_created_on&gt;&lt;sys_id&gt;a5167d73c3df52101f5afb377d013146&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:03&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;0b38ac3d-2bcf-4c0c-ae1a-a75f3127b5d1&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{flow_variable.lista}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:03&lt;/sys_created_on&gt;&lt;sys_id&gt;a9167d73c3df52101f5afb377d013146&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:03&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;745256ed-39e5-40b2-8a29-16505382f496&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;29167d73c3df52101f5afb377d013118&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{629254f5-ba23-4d59-9d1c-1c2ae3e300a3.Record.opened_by}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;ad167d73c3df52101f5afb377d013145&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:02&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;244d6cdb-b6be-4738-b5eb-9ebfff160abf&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=29167d73c3df52101f5afb377d013118^sys_idNOT IN61167d73c3df52101f5afb377d013130,65167d73c3df52101f5afb377d01312c"/&gt;&lt;sys_hub_flow_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e4cc1504-53c3-4692-ac19-5cd296312d2d&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;variable&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;variable&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/model&gt;&lt;model_id&gt;29167d73c3df52101f5afb377d013118&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_variable_29167d73c3df52101f5afb377d013118&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;61167d73c3df52101f5afb377d013130&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:02&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_variable&gt;&lt;sys_hub_flow_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9061f5fc-9289-41c3-b360-3118afa88adf&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;lista&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;lista&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Copy of Report Intructor 3"&gt;29167d73c3df52101f5afb377d013118&lt;/model&gt;&lt;model_id&gt;29167d73c3df52101f5afb377d013118&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_variable_29167d73c3df52101f5afb377d013118&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-31 14:16:02&lt;/sys_created_on&gt;&lt;sys_id&gt;65167d73c3df52101f5afb377d01312c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CookNow"&gt;37601eaec3539e101f5afb377d013106&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-31 14:16:02&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_variable&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=29167d73c3df52101f5afb377d013118"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=29167d73c3df52101f5afb377d013118"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2138416311</payload_hash>
+        <record_name>Copy of Report Intructor 3</record_name>
+        <reverted_from/>
+        <source>f85e4e23c35f12101f5afb377d013110</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:19:39</sys_created_on>
+        <sys_id>22e631f3c3df52101f5afb377d01310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194bcbb4f6c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:19:39</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>a6e631f3acdf521068fda17499f11009</update_guid>
+        <update_guid_history>a6e631f3acdf521068fda17499f11009:-2138416311,8866f1b32cdf5210285069b32d642dfb:2106945756,31167d7348df52102146d9d89f4a1650:399406790,2d167d73bddf5210e381ad669efa9c29:-1854201429</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 14:22:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>2c2cbb2919434c4bad380f0ad5704451</sys_id>
+        <sys_metadata>29167d73c3df52101f5afb377d013118</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Report Intructor 3</sys_name>
+        <sys_package display_value="CookNow" source="x_1593191_cooknow">37601eaec3539e101f5afb377d013106</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CookNow">37601eaec3539e101f5afb377d013106</sys_scope>
+        <sys_scope_delete display_value="">02f6f955544d4072944ecb737bdce3a9</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_29167d73c3df52101f5afb377d013118</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_29167d73c3df52101f5afb377d013118">22e631f3c3df52101f5afb377d01310a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 14:22:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
